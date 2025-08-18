@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body class="electronics-accent">
+
+    <header>
+        <h1 class="logo"><a href="index.html">Home</a></h1>
+
+        <nav aria-label="Navigation Bar">
+            <ul class="nav-list main-links">
+                <li><a href="software.html">Software</a></li>
+                <li><a href="mechanical.html">Mechanical</a></li>
+                <li><a href="initiatives.html">Initiatives</a></li>
+                <li><a href="laboratory.html">Laboratory</a></li>
+                <li><a href="electronics.html" class="active">Electronics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="skills project-title">
+            <h2>Electronics</h2>
+            <div class="skills-container">
+                <div class="skill-box clickable" style="cursor: default">
+                    <h3>Microcontrollers</h3>
+                    <ul>
+                        <li>Arduino</li>
+                        <li>ESP32</li>
+                        <li>Raspberry Pi</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box clickable" style="cursor: default">
+                    <h3>Communication & Interfaces</h3>
+                    <ul>
+                        <li>Serial Protocols (I<sup>2</sup>C, UART, SPI)</li>
+                        <li>Network Protocols (IP, TCP/UDP, DHCP, ICMP)</li>
+                        <li>REST API Integration</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box clickable" style="cursor: default">
+                    <h3>Peripherals & Control</h3>
+                    <ul>
+                        <li>Sensor Integration (Piezo, ToF, Temperature, Tilt, Light)</li>
+                        <li>Motor Control (DC, Servo)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box clickable" style="cursor: default">
+                    <h3>Signal Processing</h3>
+                    <ul>
+                        <li>Pulse-Width Modulation</li>
+                        <li>Analog-to-Digital Conversion</li>
+                        <li>Digital Signal Processing (FFT, Filtering)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box clickable" style="cursor: default">
+                    <h3>Hardware Testing</h3>
+                    <ul>
+                        <li>Multimeter</li>
+                        <li>Oscilloscope</li>
+                        <li>Logic Analyzer</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <article class="project">
+            <h3>Webcam Controller</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="electronics_images/WebcamMain.png" alt="Webcam Controller Circuit" class="clickable lightboxable">
+                        <figcaption>Webcam Controller Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="electronics_images/WebcamDemo.png" alt="Webcam Capture" class="clickable lightboxable">
+                        <figcaption>Webcam Capture</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtube.com/shorts/g_GPFaC5PC0?feature=share" target="_blank" class="clickable">
+                            <img src="electronics_images/WebcamThumbnail.png" alt="Webcam Controller Video Demo">
+                        </a>
+                        <figcaption>Webcam Controller Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        My first time working with serial communication beyond Arduino interfaces and directly interacting with a computer. 
+                        This webcam control system enables zoom adjustment and reorientation using an Arduino controller, 
+                        along with an image capture feature that saves photos directly to the computer.
+                        It was cool to see how the Arduino could directly manipulate the computer interface and control the webcam in real-time.
+                        I also learned about UART and serial data transmission where the Arduino and computer could communicate with each other
+                        as long as they used the same baud rate without needing a clock signal for synchronization.
+                    </p>
+                    <p>
+                        Features: Serial Communication (UART), Tilt Sensor, Java (Processing), Arduino, C/C++
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Temperature Regulation Controller</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="electronics_images/TempMain.png" alt="Temperature Regulation Controller Circuit" class="clickable lightboxable">
+                        <figcaption>Temperature Regulation Controller Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="electronics_images/TempLCD.png" alt="Temperature Display Example" class="clickable lightboxable">
+                        <figcaption>Temperature Display Example</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtu.be/E_3PFmFSJE8" target="_blank" class="clickable">
+                            <img src="electronics_images/TempThumbnail.png" alt="Temperature Regulation Controller Video Demo">
+                        </a>
+                        <figcaption>Temperature Regulation Controller Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        I wanted to simulate a temperature-sensitive fan system that could be manually adjusted to simulate heating or cooling conditions.
+                        Even though there is no physical fan connected in the demo, the project was a way for me to test out DC motor control using an H-bridge.
+                        The LCD would display the current temperature and fan speed, while the fan automatically changes its speed based on the temperature.
+                        The device also included an automatic shutdown feature to simulate overheating conditions. I implemented the Arduino's EEPROM library
+                        to restore its last cooling/heating mode after reset or power loss. This taught me about electrically erasable programmable read-only
+                        memory (EEPROM) where the microcontroller can store small amounts of data in non-volatile memory. It was also the first time 
+                        I used an external power source (9V battery) to power the motor where I learned proper circuit design and power handling. 
+                        Before the H-bridge, I learned how to use a diode to prevent back EMF generated by the motor from damaging the circuit.
+                    </p>
+                    <p>
+                        Features: Temperature Sensor, DC Motor, H-Bridge, EEPROM, Arduino, C/C++, LCD Display
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Bomb Defusal Simulation</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="electronics_images/BombMain.png" alt="Bomb Defusal Simulation Circuit" class="clickable lightboxable"> 
+                        <figcaption>Bomb Defusal Simulation Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="electronics_images/BombLCD.png" alt="Bomb Timer and Guess" class="clickable lightboxable">
+                        <figcaption>Bomb Timer and Guess</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtu.be/384b-FIRaYY" target="_blank" class="clickable">
+                            <img src="electronics_images/BombThumbnail.png" alt="Bomb Defusal Simulation Video Demo">
+                        </a>
+                        <figcaption>Bomb Defusal Simulation Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        This project gave me the chance to combine everything I had learned so far about input/output systems and I wanted to design an interactive
+                        game that had a time pressure element. The servo motor was used to simulate a lock mechanism that would produce the correct four digit code 
+                        to disarm the bomb. In the first iteration, the servo motor drew a lot of current, causing the LCD to appear dim and unreadable.
+                        I added a capacitor to store local charge, which smoothed out voltage dips and prevented brownouts.
+                    </p>
+                    <p>
+                        Features: Time-Sensitive Design, Servo Motor, Capacitor, Arduino, C/C++, LCD Display
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Dual-Mode Piano Trainer</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="electronics_images/PianoMain.png" alt="Dual-Mode Piano Trainer Circuit" class="clickable lightboxable">
+                        <figcaption>Dual-Mode Piano Trainer Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="electronics_images/PianoLCD.png" alt="Ode to Joy Sample Practice" class="clickable lightboxable">
+                        <figcaption>Ode to Joy Sample Practice</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtu.be/PQxOUZK4m9w" target="_blank" class="clickable">
+                            <img src="electronics_images/Piano1Thumbnail.png" alt="Piano Trainer Video Demo Part 1">
+                        </a>
+                        <figcaption>Piano Trainer Video Demo Part 1</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtu.be/WMxRLGKNXao" target="_blank" class="clickable">
+                            <img src="electronics_images/Piano2Thumbnail.png" alt="Piano Trainer Video Demo Part 2">
+                        </a>
+                        <figcaption>Piano Trainer Video Demo Part 2</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        I wanted to create an interactive system that incorporated UI/UX elements and to practice different piezo buzzer tones.
+                        The dual-mode piano trainer features a menu selection where you can pick between a free-play mode or a practice mode.
+                        The free-play mode is just a simple five keyboard piano setup that plays different tones based on the key pressed.
+                        The practice mode provides three songs to choose from: Hot Cross Buns, Mary Had a Little Lamb, and Ode to Joy.
+                        Once selected, the device takes you through the song step-by-step with visual cues and audio error feedback.
+                        I learned how to make the LCD scroll through on each successful key press, along with an auto-scroller for longer texts.
+                    </p>
+                    <p>
+                        Features: UI/UX Design, Mode-Switching Control, Piezo Buzzer, Arduino, C/C++, LCD Display
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Morse Code Simulator</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="electronics_images/MorseMain.png" alt="Morse Code Simulator Circuit" class="clickable lightboxable">
+                        <figcaption>Morse Code Simulator Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="electronics_images/MorseLCD.png" alt="Sample Morse Code Translated Sequence" class="clickable lightboxable">
+                        <figcaption>Sample Morse Code Translated Sequence</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtube.com/shorts/DsR0f1nU5GE?feature=share" target="_blank" class="clickable">
+                            <img src="electronics_images/MorseThumbnail.png" alt="Morse Code Simulator Video Demo">
+                        </a>
+                        <figcaption>Morse Code Simulator Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        This was my first big jump into embedded systems and I wanted to create a simple device that took in Morse code inputs
+                        and translated them into text. The LED and piezo buzzer produced visual and audio feedback for each button press. It was also
+                        my first time using an LCD screen and noticed the wire connection was different from the simulation I ran. This was my first experience
+                        learning about I<sup>2</sup>C and parallel communication protocols where the HD44780 LCD ran on parallel which meant more wires to 
+                        connect. In I<sup>2</sup>C protocol there are two signal lines, SCL and SDA which allows for more efficient communication with fewer wires. 
+                        I also learned about master/slave architecture and how data is transmitted in packets using the SDA while the SCL helps synchronize transfer.
+                        The setup also resulted in a dim display which meant I had to apply a source for the backlight pins on the LCD without blowing it up.
+                    </p>
+                    <p>
+                        Features: I<sup>2</sup>C Communication, Parallel Communication, Piezo Buzzer, Arduino, C/C++, LCD Display
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Nightlight Detector</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="electronics_images/NightMain.png" alt="Nightlight Detector Circuit" class="clickable lightboxable">
+                        <figcaption>Nightlight Detector Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="electronics_images/NightDemo.png" alt="Nightlight Turned On" class="clickable lightboxable">
+                        <figcaption>Nightlight Turned On</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtube.com/shorts/WWJat9Wx1hA?feature=share" target="_blank" class="clickable">
+                            <img src="electronics_images/NightThumbnail.png" alt="Nightlight Detector Video Demo">
+                        </a>
+                        <figcaption>Nightlight Detector Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        I wanted to experiment with different sensors and designed a nightlight detector that senses ambient light levels while changing 
+                        the RGB LED white light intensity. It was my first time working with an RGB LED and I learned how to mix colors based on the analog reading
+                        from the phototransistor. I had to map and constrain the analog reading to a range of 0-255 to get the correct colour intensity. For analog
+                        sensors, there was some calibration done to get the correct range of values to work with. 
+                    </p>
+                    <p>
+                        Features: Phototransistor, RGB LED, Arduino, C/C++
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Whack-A-Mole Game</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="electronics_images/WhackMain.png" alt="Whack-A-Mole Game Circuit" class="clickable lightboxable">
+                        <figcaption>Whack-A-Mole Game Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="electronics_images/WhackScore.png" alt="Whack-A-Mole Score Sample" class="clickable lightboxable">
+                        <figcaption>Whack-A-Mole Score Sample</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtube.com/shorts/zJOG7BWpooA?feature=share" target="_blank" class="clickable">
+                            <img src="electronics_images/WhackThumbnail.png" alt="Whack-A-Mole Game Video Demo">
+                        </a>
+                        <figcaption>Whack-A-Mole Game Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        This was my very first physical embedded systems project where I took a simulated assignment from class and built it in real life.
+                        The game logic involved random LED activations which required the player to hit the correct button within the time frame. There is also
+                        an inactivity timer that resets the game and flashing LED sequences based on performance.
+                        I learned about button debouncing and non-blocking timing using the millis() function to keep track of time without pausing the program.
+                    </p>
+                    <p>
+                        Features: Real-Time Game Logic, Button Debouncing, Non-Blocking Timing, Arduino, C/C++
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="modal">
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

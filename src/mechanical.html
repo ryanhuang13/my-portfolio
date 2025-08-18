@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body class="mechanical-accent">
+
+    <header>
+        <h1 class="logo"><a href="index.html">Home</a></h1>
+
+        <nav aria-label="Navigation Bar">
+            <ul class="nav-list main-links">
+                <li><a href="software.html">Software</a></li>
+                <li><a href="mechanical.html" class="active">Mechanical</a></li>
+                <li><a href="initiatives.html">Initiatives</a></li>
+                <li><a href="laboratory.html">Laboratory</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="skills project-title">
+            <h2>Mechanical</h2>
+            <div class="skills-container">
+                    <div class="skill-box clickable" style="cursor: default">
+                        <h3>Design & Modeling Tools</h3>
+                        <ul>
+                            <li>SolidWorks</li>
+                            <li>Computer-Aided Design (CAD)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-box clickable" style="cursor: default">
+                        <h3>Analysis & Simulation</h3>
+                        <ul>
+                            <li>Finite Element Analysis (FEA)</li>
+                            <li>Biomechanics</li>
+                            <li>Motion Tracking</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-box clickable" style="cursor: default">
+                        <h3>Fabrication & Prototyping</h3>
+                        <ul>
+                            <li>3D Printing</li>
+                            <li>Soldering</li>
+                            <li>PCB Prototyping</li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+        <article class="project">
+            <h3>Finger Slider Module Prototype</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="mechanical_images/SliderModel.png" alt="SolidWorks Slider Model" class="clickable lightboxable">
+                        <figcaption>SolidWorks Slider Model</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="mechanical_images/3DPrintSlider.png" alt="3D Printed Slider Prototype" class="clickable lightboxable">
+                        <figcaption>3D Printed Slider Prototype</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="project-text">
+                    <p>
+                        For my design team, I performed literature and patent reviews on hand rehabilitation devices and designed a finger slider module 
+                        specifically for finger flexion and extension exercises. The system is designed to be modular in order to incorporate different
+                        devices for different hand rehabilitation exercises. I modeled the prototype in SolidWorks and then 3D printed it to test for fit and function. 
+                        The two piece base and slider design provides customizability for different finger sizes and allows for easy assembly and disassembly.
+                        Further iteration will involve refining the ergonomics and functionality for comfort and integrating electrical components
+                        such as time-of-flight (ToF) sensors or force sensors to measure finger position and pressure. The movement data can then be 
+                        translated into a game interface to provide real-time rehab feedback and improve exercise adherence.
+                    </p>
+                    <p>
+                        Features: SolidWorks, 3D Printing, Mechanical Prototyping, Human-Centered Design
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Spring-Actuated Knee Rehabilitation Device</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="mechanical_images/SpringKneeDevice.png" alt="SolidWorks Knee Device Model" class="clickable lightboxable">
+                        <figcaption>SolidWorks Knee Device Model</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="mechanical_images/MediaPipeModel.png" alt="Markerless Motion Tracking Sample" class="clickable lightboxable">
+                        <figcaption>Markerless Motion Tracking Sample</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="mechanical_images/KneeROMPlot.png" alt="Knee ROM Plot" class="clickable lightboxable">
+                        <figcaption>Knee ROM Plot</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        In this project I worked with a team to assess the range of motion (ROM) and angular velocity for healthy and unhealthy knees,
+                        while designing a solution to address the impairment. I used MediaPipe as a tool to track knee motion and used MATLAB to process the data
+                        and calculate the ROM and angular velocity. A final design was proposed for a spring-actuated device that provided additional force to
+                        propel the knee from flexion to extension. The concept involves an adjustable spring mechanism to tailor towards the patient's strength
+                        and rehabilitation progress.
+                    </p>
+                    <p>
+                        Features: MediaPipe, MATLAB, SolidWorks, Markerless Motion Tracking, Biomechanics
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Motion & Finite Element Analysis</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="mechanical_images/FEABeam.png" alt="FEA for Cantilever Beam" class="clickable lightboxable">
+                        <figcaption>FEA for Cantilever Beam</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="mechanical_images/YokeStress.png" alt="Stress Analysis on Yoke" class="clickable lightboxable">
+                        <figcaption>Stress Analysis on Yoke</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="mechanical_images/CrankModel.png" alt="Inverted Crank Slider Model" class="clickable lightboxable">
+                        <figcaption>Inverted Crank Slider Model</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="mechanical_images/CrankMotionPlot.png" alt="Slider Motion Plot" class="clickable lightboxable">
+                        <figcaption>Slider Motion Plot</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        This was my first exposure to SolidWorks beyond basic CAD modeling. I learned how to use the motion simulation to perform an analysis on
+                        a crank slider mechanism to generate displacement plots. I also learned about finite element analysis (FEA) and mesh convergences to analyze
+                        various mechanical components for stress and strain. This accumulated to a design competition where I used those techniques to optimize
+                        a yoke design to withstand another competitor's yoke pulling load.
+                    </p>
+                    <p>
+                        Features: SolidWorks, Motion Simulation, Finite Element Analysis (FEA), Stress Optimization
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="modal">
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

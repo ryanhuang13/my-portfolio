@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body class="laboratory-accent">
+
+    <header>
+        <h1 class="logo"><a href="index.html">Home</a></h1>
+
+        <nav aria-label="Navigation Bar">
+            <ul class="nav-list main-links">
+                <li><a href="software.html">Software</a></li>
+                <li><a href="mechanical.html">Mechanical</a></li>
+                <li><a href="initiatives.html">Initiatives</a></li>
+                <li><a href="laboratory.html" class="active">Laboratory</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="skills project-title">
+            <h2>Laboratory</h2>
+            <div class="skills-container">
+                <div class="skill-box clickable" style="cursor: default">
+                    <h3>Wet Lab Techniques</h3>
+                    <ul>
+                        <li>Cell Culture</li>
+                        <li>Gel Electrophoresis</li>
+                        <li>Pipetting and Solution Preparation</li>
+                        <li>Aseptic Technique</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box clickable" style="cursor: default">
+                    <h3>Dry Lab Techniques</h3>
+                    <ul>
+                        <li>PyMOL</li>
+                        <li>Swiss-Model</li>
+                        <li>CB-Dock2</li>
+                        <li>Chimera</li>
+                        <li>BLAST</li>
+                        <li>NCBI/UniProt/PDB</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box clickable" style="cursor: default">
+                    <h3>Analytical Methods</h3>
+                    <ul>
+                        <li>Spectrophotometry</li>
+                        <li>Chromatography</li>
+                        <li>Hemocytometer</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box clickable" style="cursor: default">
+                    <h3>Imaging</h3>
+                    <ul>
+                        <li>Fluorescence Microscopy</li>
+                        <li>Fiji (ImageJ)</li>
+                        <li>Xenon MRI</li>
+                        <li>CT Segmentation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <article class="project">
+            <h3>Cell Staining & Imaging</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="laboratory_images/NucleiMicroscopy.png" alt="Nuclei Fluorescence Microscopy" class="clickable lightboxable">
+                        <figcaption>Nuclei Fluorescence Microscopy</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="laboratory_images/GreyMicroscopy.png" alt="White Light Microscopy" class="clickable lightboxable">
+                        <figcaption>White Light Microscopy</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="laboratory_images/GreenMicroscopy.png" alt="Green Light Microscopy" class="clickable lightboxable">
+                        <figcaption>Green Light Microscopy</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        In this experiment, I observed nuclei morphology and muscle filament of mammalian cells using fluorescence microscopy. 
+                        Following proper aseptic technique, I prepared the cell culture samples by washing with phosphate buffered saline (PBS)
+                        and plated into an IBIDI imaging chamber. Then to preserve the morphology and structure of the cells I incubated with paraformaldehyde 
+                        to create crosslink and protein bridges with free amine groups and amino acid side chains. After fixing the cell, I permeabilized the cell
+                        membrane using Triton X-100 to allow fluorescent labeling agents to bind with intracellular structures. 
+                        I also added bovine serum albumin (BSA) protein to prevent nonspecific binding. Finally, I stained the cell using phalloidin, Alexa-Fluor-488
+                        and Hoechst dye. Each of these compounds binds to specific structures in the cell such as F-actin and the cell nuclei.
+                        This experiment taught me a lot about flurophores and fluorescence imaging where these chemical compounds can be joined to specific antibodies/proteins
+                        to detect targeted antigens in cells. A fluorescence microscope can then be used to excite these compounds causing them to emit light
+                        allowing the camera to detect photon emission and wavelength patterns to produce these images.
+                    </p>
+                    <p>
+                        Features: Fluorescence Microscopy, Image Processing, Cell Imaging, Fiji (ImageJ), Aseptic Technique, Micro Pipetting, Cell Culture
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>DNA Manipulation</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="laboratory_images/GelElectrophoresis.png" alt="Gel Electrophoresis Setup" class="clickable lightboxable">
+                        <figcaption>Gel Electrophoresis Setup</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="laboratory_images/DNALadder.png" alt="DNA Ladder" class="clickable lightboxable">
+                        <figcaption>DNA Ladder</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        In this experiment, I performed gel electrophoresis to separate DNA fragments based on size.
+                        I started off by learning about plasmid DNA which can be used as vectors to deliver genetic material into cells as well as synthetically 
+                        constructed to manipulate or amplify DNA sequences. This lab takes advantage of the compact nature and their self-replicating properties.
+                        I prepared the DNA by applying restriction enzymes to cut the plasmid at specific regions, creating different DNA fragments. To cut the DNA
+                        I used a restriction digestion buffer which contains NaCl, Tris-HCL, and Mg<super>2+</super> ions to create an optimal environment for the enzyme to 
+                        function. Taking advantage of the negative charge of DNA, I set up an agarose gel electrophoresis system to separate the DNA fragments based on size.
+                        A buffer solution was used to provide conductance for the electric field to be generated along the gel. An application of gel electrophoresis is to 
+                        help separate desired DNA fragments which can be isolated for cloning using restriction enzymes to cut the complete DNA and DNA ligase 
+                        being used to bind the isolated pieces together. Then this plasmid can be introduced into a host cell, usually bacteria like E. coli 
+                        to efficiently replicate the DNA.
+                    </p>
+                    <p>
+                        Features: Gel Electrophoresis, DNA Manipulation, Restriction Enzymes, Agarose Gel, DNA Ladder, Micro Pipetting
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Protein Engineering</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="laboratory_images/3EQMStructure.png" alt="3EQM Structure" class="clickable lightboxable">
+                        <figcaption>Human Aromatase Structure</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="laboratory_images/3EQMActiveSite.png" alt="3EQM Active Site" class="clickable lightboxable">
+                        <figcaption>Human Aromatase Active Site</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        This case study involved osteoporosis and the reaction mechanism of human aromatase enzyme which catalyzes the reaction converting
+                        testosterone and androstendedione to estradiol and estrone. When there is aberrant activity, it reduces estrogen production and with 
+                        low estrogen levels it leads to weakened bone structure resulting in osteoporosis. This experiment explores manipulating genetic sequences to optimize
+                        reaction kinetics. I first studied the reaction mechanism and active site, identifying 3 important residues in the binding cavity. The next step 
+                        was to individually select and mutate those amino acid sequences to alter reactivity. The two focal points for a successful mutation is 
+                        to observe the structural and chemical compatibility. For structure, I avoided steric hindrances and aimed for bulkier, aromatic side chains
+                        that brought the amino acid residue closer, reducing the pocket size. I also needed to make sure the mutated sequence is chemically consistent
+                        where if the target molecule is hydrophobic, the mutated residue should also have the same properties. Once these criteria are fulfilled I altered
+                        the FASTA sequence on Swiss-Model to generate a mutated model of the aromatase enzyme. Then I docked the ligands into the active site of the mutant
+                        model to estimate the Gibbs free energy of binding to determine the feasibility of the mutation.
+                    </p>
+                    <p>
+                        Features: Molecular Modeling, Active Site Analysis, PyMOL, Swiss-Model, CB-Dock 2
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Protein Release Kinetics</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="laboratory_images/ProteinAssay.png" alt="Protein Assay" class="clickable lightboxable">
+                        <figcaption>Protein Assay</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="laboratory_images/ProteinAssayDemo.png" alt="Protein Assay Demo" class="clickable lightboxable">
+                        <figcaption>Protein Assay Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        I investigated the release kinetics of proteins from hydrogel spheres by immersing the spheres in buffer and collecting samples at specific
+                        time intervals. Protein concentration for each sample was quantified using a bicinchoninic acid (BCA) protein assay with variations in colour 
+                        indicating different concentration levels. The absorbance was then measured using a spectrophotometer and compared to a standard
+                        curve generated from known concentrations. This helped me construct release profiles over time to determine diffusion rates and total protein
+                        release for each sample. 
+                    </p>
+                    <p>
+                        Features: BCA Protein Assay, Spectrophotometry, Chromatography, Reaction Kinetics
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="modal">
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
