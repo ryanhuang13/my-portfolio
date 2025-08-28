@@ -69,38 +69,37 @@
             </article>
 
             <article class="electronics-accent project">
-                <h3>Webcam Controller</h3>
+                <h3>4-Bit Arithmetic Logic Unit (ALU) Design & Verification</h3>
                 <div class="project-content">
+
                     <div class="project-images">
                         <figure>
-                            <img src="electronics_images/WebcamMain.png" alt="Webcam Controller Circuit" class="clickable lightboxable">
-                            <figcaption>Webcam Controller Circuit</figcaption>
+                            <img src="electronics_images/ALUTestCase.png" alt="ALU Testbench Console Output" class="clickable lightboxable">
+                            <figcaption>ALU Testbench Console Output</figcaption>
                         </figure>
 
                         <figure>
-                            <img src="electronics_images/WebcamDemo.png" alt="Webcam Capture" class="clickable lightboxable">
-                            <figcaption>Webcam Capture</figcaption>
+                            <img src="electronics_images/ALULogicAnalyzer.png" alt="Full Logic Analyzer View (GTKWave)" class="clickable lightboxable">
+                            <figcaption>Full Logic Analyzer View (GTKWave)</figcaption>
                         </figure>
 
                         <figure>
-                            <a href="https://youtube.com/shorts/g_GPFaC5PC0?feature=share" target="_blank" class="electronics-accent clickable">
-                                <img src="electronics_images/WebcamThumbnail.png" alt="Webcam Controller Video Demo">
-                            </a>
-                            <figcaption>Webcam Controller Video Demo</figcaption>
+                            <img src="electronics_images/ALUBinaryResult.png" alt="Expanded 4-Bit ALU Result Signals" class="clickable lightboxable">
+                            <figcaption>Expanded 4-Bit ALU Result Signals</figcaption>
                         </figure>
                     </div>
-
                     <div class="project-text">
                         <p>
-                            My first time working with serial communication beyond Arduino interfaces and directly interacting with a computer. 
-                            This webcam control system enables zoom adjustment and reorientation using an Arduino controller, 
-                            along with an image capture feature that saves photos directly to the computer.
-                            It was cool to see how the Arduino could directly manipulate the computer interface and control the webcam in real-time.
-                            I also learned about UART and serial data transmission where the Arduino and computer could communicate with each other
-                            as long as they were on the same baud rate with no need for a clock synchronizer.
+                            For my first Verilog project, I designed a 4-bit Arithmetic Logic Unit (ALU) supporting addition, subtraction, AND, and OR operations. 
+                            The design includes carry, zero, negative, and overflow flags to indicate result conditions. To verify functionality, I created a self-checking 
+                            testbench that automatically compared ALU outputs against expected values, helping me practice test case handling and QA procedures. I also used 
+                            GTKWave waveform analysis to debug signal propagation over time and to inspect how flags behaved during edge cases. Running simulations with Icarus 
+                            Verilog (.vvp producing .vcd for GTKWave) gave me practical experience with the HDL toolchain. Through this project, I gained hands-on 
+                            understanding of Verilog syntax, binary addition/subtraction (including wrapping and carry/borrow logic), and the role of MSB/LSB in signed 
+                            4-bit arithmetic.
                         </p>
                         <p>
-                            Features: Serial Communication (UART), Tilt Sensor, Java (Processing), Arduino, C/C++
+                            Features: Verilog, GTKWave, Logic Analyzer
                         </p>
                     </div>
                 </div>
@@ -246,7 +245,7 @@
                     across different domains.
                 </p>
 
-                <p>Discover my SMILE! (Software, Mechanical, Initiatives, Laboratory, Electronics)</p>
+                <p>Discover my S.M.I.L.E.! (Software, Mechanical, Initiatives, Laboratory, Electronics)</p>
                     
             </div>
         </section>

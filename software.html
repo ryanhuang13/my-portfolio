@@ -44,10 +44,11 @@
                 </div>
 
                 <div class="skill-box clickable" style="cursor: default">
-                    <h3>Tools</h3>
+                    <h3>Tools & Simulation</h3>
                     <ul>
                         <li>Git & GitHub</li>
                         <li>Linux/Bash</li>
+                        <li>Verilog/GTKWave</li>
                     </ul>
                 </div>
 
@@ -72,6 +73,52 @@
                 </div>
             </div>
         </section>
+
+        <article class="project">
+            <h3>Live ESPN Scoreboard</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="software_images/SportMain.png" alt="Live Scoreboard Circuit" class="clickable lightboxable">
+                        <figcaption>Live Scoreboard Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="software_images/SportDemo.png" alt="Sample Scoreboard Display" class="clickable lightboxable">
+                        <figcaption>Sample Scoreboard Display</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtu.be/Owoqje2sew4" target="_blank" class="clickable">
+                            <img src="software_images/SportThumbnail.png" alt="ESPN Scoreboard Video Demo">
+                        </a>
+                        <figcaption>ESPN Scoreboard Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        I practiced more with API parsing using the ESPN data endpoints for different sports such as NBA, NFL, and MLB.
+                        I was able to go more indepth in studying how API structures are designed and handling JSON format because there are specific
+                        calls that have to be made when using JSONObject or JSONArray in order to properly parse the information I want. Especially since
+                        the ESPN API data contains so much information it was challenging at first to find exactly what I needed. This also made me
+                        practice serial debugging by adding print statements on the terminal to check if the correct data is being transfered along the serial
+                        port. I also needed to be careful because NBA, NFL, and MLB had different ways of providing API data. The scoreboard system I
+                        designed on Arduino features a LCD display that will scroll through current NBA, NFL, or MLB games and display the teams playing and 
+                        scores for each team. Additionally, it will also display the current period and time left for a more immersive experience. If the game
+                        has not started then it will display the starting time of the game. On the other hand if the game has ended then the LCD will display 
+                        the final score. I also wanted to added more functionaliy to the Arduino by including LED indicators that will light up when the 
+                        corresponding team has made a point. Another concept I learned in this project was utilizing the structure data type to define
+                        common functions I need to perform on the Arduino such as button debouncing and LED flashes. With struct I was able to add custom
+                        variables and functions making my coding experience easier and more efficient. 
+                    </p>
+                    <p>
+                        Features: REST API Integration, JSON, Serial Communication (UART), Java (Processing), Arduino, C/C++
+                    </p>
+                </div>
+            </div>
+        </article>
 
         <article class="project">
             <h3>Personal Project Website</h3>
