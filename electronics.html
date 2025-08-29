@@ -43,7 +43,7 @@
                     <ul>
                         <li>Serial Protocols (I<sup>2</sup>C, UART, SPI)</li>
                         <li>Network Protocols (IP, TCP/UDP, DHCP, ICMP)</li>
-                        <li>REST API Integration</li>
+                        <li>REST API Integration (Spotify Web API, ESPN API, OpenWeatherMap)</li>
                     </ul>
                 </div>
 
@@ -74,6 +74,46 @@
                 </div>
             </div>
         </section>
+
+        <article class="project">
+            <h3>Spotify Controller</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="electronics_images/SpotifyMain.png" alt="Spotify Controller Circuit" class="clickable lightboxable">
+                        <figcaption>Spotify Controller Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="electronics_images/SpotifyLCD.png" alt="Song Display Sample" class="clickable lightboxable">
+                        <figcaption>Song Display Sample</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtu.be/2fFlLIFImmo" target="_blank" class="clickable">
+                            <img src="electronics_images/SpotifyThumbnail.png" alt="Spotify Controller Video Demo">
+                        </a>
+                        <figcaption>Spotify Controller Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        For this project I designed a Spotify controller that can play/pause, skip forward/back, and adjust the volume.
+                        I integrated an LCD display to show the current song, artist, remaining time, and added auto-scrolling for longer titles.
+                        I learned how to handle token-based authentication (OAuth) to access my personal Spotify account, and leveraged the pyserial 
+                        and spotipy packages to interact with playback, volume, and track information. It was also interesting to explore
+                        serial communication between Python and Arduino, encoding Python's Unicode strings into bytes for transmission and decoding bytes
+                        received from the Arduino. Since this is my third project working with API requests, I am a lot more comfortable parsing JSON data and receiving/transmitting
+                        data over serial to the Arduino. I really liked this project as it gave me the opportunity to explore managing continuous serial data streams, 
+                        handling redirect URIs for OAuth authentication, and integrating hardware with the Spotify Web API to create a responsive, interactive music controller.
+                    </p>
+                    <p>
+                        Features: Python, Spotify Web API, Token-Based Authentication (OAuth), Playback Control, Serial Communication, Arduino, C/C++, LCD Display
+                    </p>
+                </div>
+            </div>
+        </article>
 
         <article class="project">
             <h3>4-Bit Arithmetic Logic Unit (ALU)</h3>

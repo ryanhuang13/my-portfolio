@@ -28,6 +28,46 @@
     <main>
         <section class="project-title">
             <h2 style="color: #d3d3d3">Recent Projects Highlight</h2>
+
+            <article class="electronics-accent project">
+                <h3>Spotify Controller</h3>
+                <div class="project-content">
+                    <div class="project-images">
+                        <figure>
+                            <img src="electronics_images/SpotifyMain.png" alt="Spotify Controller Circuit" class="clickable lightboxable">
+                            <figcaption>Spotify Controller Circuit</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="electronics_images/SpotifyLCD.png" alt="Song Display Sample" class="clickable lightboxable">
+                            <figcaption>Song Display Sample</figcaption>
+                        </figure>
+
+                        <figure>
+                            <a href="https://youtu.be/2fFlLIFImmo" target="_blank" class="clickable">
+                                <img src="electronics_images/SpotifyThumbnail.png" alt="Spotify Controller Video Demo">
+                            </a>
+                            <figcaption>Spotify Controller Video Demo</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="project-text">
+                        <p>
+                            For this project I designed a Spotify controller that can play/pause, skip forward/back, and adjust the volume.
+                            I integrated an LCD display to show the current song, artist, remaining time, and added auto-scrolling for longer titles.
+                            I learned how to handle token-based authentication (OAuth) to access my personal Spotify account, and leveraged the pyserial 
+                            and spotipy packages to interact with playback, volume, and track information. It was also interesting to explore
+                            serial communication between Python and Arduino, encoding Python's Unicode strings into bytes for transmission and decoding bytes
+                            received from the Arduino. Since this is my third project working with API requests, I am a lot more comfortable parsing JSON data and receiving/transmitting
+                            data over serial to the Arduino. I really liked this project as it gave me the opportunity to explore managing continuous serial data streams, 
+                            handling redirect URIs for OAuth authentication, and integrating hardware with the Spotify Web API to create a responsive, interactive music controller.
+                        </p>
+                        <p>
+                            Features: Python, Spotify Web API, Token-Based Authentication (OAuth), Playback Control, Serial Communication, Arduino, C/C++, LCD Display
+                        </p>
+                    </div>
+                </div>
+            </article>
             
             <article class="software-accent project">
                 <h3>Live ESPN Scoreboard</h3>
@@ -106,45 +146,6 @@
                 </div>
             </article>
 
-            <article class="electronics-accent project">
-                <h3>Temperature Regulation Controller</h3>
-                <div class="project-content">
-                    <div class="project-images">
-                        <figure>
-                            <img src="electronics_images/TempMain.png" alt="Temperature Regulation Controller Circuit" class="clickable lightboxable">
-                            <figcaption>Temperature Regulation Controller Circuit</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="electronics_images/TempLCD.png" alt="Temperature Display Example" class="clickable lightboxable">
-                            <figcaption>Temperature Display Example</figcaption>
-                        </figure>
-
-                        <figure>
-                            <a href="https://youtu.be/E_3PFmFSJE8" target="_blank" class="electronics-accent clickable">
-                                <img src="electronics_images/TempThumbnail.png" alt="Temperature Regulation Controller Video Demo">
-                            </a>
-                            <figcaption>Temperature Regulation Controller Video Demo</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="project-text">
-                        <p>
-                            I wanted to simulate a temperature-sensitive fan system that could be manually adjusted to simulate heating or cooling conditions.
-                            Even though there is no physical fan connected in the demo, the project was a way for me to test out DC motor control using an H-bridge.
-                            The LCD would display the current temperature and fan speed, while the fan automatically changes its speed based on the temperature.
-                            The device also included an automatic shutdown feature to simulate overheating conditions. I implemented the Arduino's EEPROM library
-                            to restore its last cooling/heating mode after reset or power loss. This taught me about electrically erasable programmable read-only
-                            memory (EEPROM) where the microcontroller can store small amounts of data in non-volatile memory. It was also the first time 
-                            I used an external power source (9V battery) to power the motor where I learned proper circuit design and power handling. 
-                            Before the H-bridge, I learned how to use a diode to prevent back EMF generated by the motor from damaging the circuit.
-                        </p>
-                        <p>
-                            Features: Temperature Sensor, DC Motor, H-Bridge, EEPROM, Arduino, C/C++, LCD Display
-                        </p>
-                    </div>
-                </div>
-            </article>
         </section>
 
        <section class="skills">
@@ -192,7 +193,7 @@
                 <a href="electronics.html" class="skill-box electronics-accent clickable">
                     <h3>Embedded Systems</h3>
                     <ul>
-                        <li>Arduino, ESP32</li>
+                        <li>Arduino, ESP32, Raspberry Pi</li>
                         <li>Serial Communication Protocol (I<sup>2</sup>C, UART, SPI)</li>
                         <li>Network Protocols (IP, TCP/UDP, DHCP, ICMP)</li>
                     </ul>
