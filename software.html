@@ -75,6 +75,44 @@
         </section>
 
         <article class="project">
+            <h3>Automated Sensor Logger & Reporter</h3>
+            <div class="project-content">
+
+                <div class="project-images">
+                    <figure>
+                        <img src="software_images/LinuxTempBash.png" alt="Linux Terminal Executing Automation Script" class="clickable lightboxable">
+                        <figcaption>Linux Terminal Executing Automation Script</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="software_images/LinuxTempEmail.png" alt="Email Report with Flags & Plot" class="clickable lightboxable">
+                        <figcaption>Email Report with Flags & Plot</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="software_images/LinuxTempPlot.png" alt="Plot of Temperature Reading Over Time" class="clickable lightboxable">
+                        <figcaption>Plot of Temperature Reading Over Time</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        My goal for this project was to automate sensor acquisition from an Arduino and interface it with Linux for QA workflows. Since many embedded systems integrate with Linux environments,
+                        I wanted hands-on experience with shell scripting for automated testing. I developed an automation pipeline that collected sensor data, logged it into CSV with timestamps,
+                        generated plots, flagged anomalies, and emailed reports with logs and visualizations. This was my first time working in Linux using WSL and Ubuntu. I learned to transfer files
+                        from Windows into Linux, configure Gmail integration by editing Linux mutt settings with nano, and automate workflows with Bash. The main challenge was serial communication 
+                        due to WSL limitations where it doesn't support direct access to hardware COM ports, so I installed com2tcp to forward Arduino data into the Linux environment by hosting a local TCP 
+                        bridge directly on my computer. I debugged issues with baud-rate mismatches, COM permissions, IP addressing, and bypassing DSR handshakes in the TCP protocol.
+                        By comparing Arduino's serial monitor with Linux netcat (nc) outputs, I was able to validate and properly parse the incoming data stream.
+                    </p>
+                    <p>
+                        Features: Linux OS, Bash, TCP/IP Protocol, Arduino, C/C++, Temperature Sensor
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
             <h3>Live ESPN Scoreboard</h3>
             <div class="project-content">
 
