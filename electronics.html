@@ -43,7 +43,7 @@
                     <ul>
                         <li>Serial Protocols (I<sup>2</sup>C, UART, SPI)</li>
                         <li>Network Protocols (IP, TCP/UDP, DHCP, ICMP)</li>
-                        <li>REST API Integration (Spotify Web API, ESPN API, OpenWeatherMap)</li>
+                        <li>REST API (Spotify Web API, ESPN API, OpenWeatherMap)</li>
                     </ul>
                 </div>
 
@@ -99,17 +99,26 @@
 
                 <div class="project-text">
                     <p>
-                        For this project I designed a Spotify controller that can play/pause, skip forward/back, and adjust the volume.
-                        I integrated an LCD display to show the current song, artist, remaining time, and added auto-scrolling for longer titles.
-                        I learned how to handle token-based authentication (OAuth) to access my personal Spotify account, and leveraged the pyserial 
-                        and spotipy packages to interact with playback, volume, and track information. It was also interesting to explore
-                        serial communication between Python and Arduino, encoding Python's Unicode strings into bytes for transmission and decoding bytes
-                        received from the Arduino. Since this is my third project working with API requests, I am a lot more comfortable parsing JSON data and receiving/transmitting
-                        data over serial to the Arduino. I really liked this project as it gave me the opportunity to explore managing continuous serial data streams, 
-                        handling redirect URIs for OAuth authentication, and integrating hardware with the Spotify Web API to create a responsive, interactive music controller.
+                        <strong>Problem:</strong> Controlling music playback while working or doing other tasks can be 
+                        inefficient. I designed a project to create a responsive, interactive controller that allows 
+                        play/pause, track skipping, and volume adjustment for Spotify using hardware integration.
                     </p>
                     <p>
-                        Features: Python, Spotify Web API, Token-Based Authentication (OAuth), Playback Control, Serial Communication, Arduino, C/C++, LCD Display
+                        <strong>Solution:</strong> I integrated an Arduino with an LCD display to show the current song, 
+                        artist, and remaining time, with auto-scrolling for longer titles. I used Python with the 
+                        pyserial and spotipy packages, handling OAuth token-based authentication to interact with 
+                        Spotify playback. Serial communication between Python and Arduino allowed sending and receiving 
+                        Unicode strings encoded as bytes for smooth real-time updates.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project strengthened my skills in API integration, continuous 
+                        serial data management, OAuth authentication, and hardware/software interfacing. It also 
+                        improved my ability to parse JSON data, handle redirect URIs, and build interactive systems 
+                        that combine software and physical components.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Python, Spotify Web API, Token-Based Authentication (OAuth), Playback 
+                        Control, Serial Communication, Arduino, C/C++, LCD Display
                     </p>
                 </div>
             </div>
@@ -118,7 +127,6 @@
         <article class="project">
             <h3>4-Bit Arithmetic Logic Unit (ALU)</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="electronics_images/ALUTestCase.png" alt="ALU Testbench Console Output" class="clickable lightboxable">
@@ -135,18 +143,28 @@
                         <figcaption>Expanded 4-Bit ALU Result Signals</figcaption>
                     </figure>
                 </div>
+
                 <div class="project-text">
                     <p>
-                        For my first Verilog project, I designed a 4-bit Arithmetic Logic Unit (ALU) supporting addition, subtraction, AND, and OR operations. 
-                        The design includes carry, zero, negative, and overflow flags to indicate result conditions. To verify functionality, I created a self-checking 
-                        testbench that automatically compared ALU outputs against expected values, helping me practice test case handling and QA procedures. I also used 
-                        GTKWave waveform analysis to debug signal propagation over time and to inspect how flags behaved during edge cases. Running simulations with Icarus 
-                        Verilog (.vvp producing .vcd for GTKWave) gave me practical experience with the HDL toolchain. Through this project, I gained hands-on 
-                        understanding of Verilog syntax, binary addition/subtraction (including wrapping and carry/borrow logic), and the role of MSB/LSB in signed 
-                        4-bit arithmetic.
+                        <strong>Problem:</strong> Understanding how basic arithmetic and logic operations are implemented 
+                        in hardware is fundamental to digital design. I designed a 4-bit ALU to explore how addition, 
+                        subtraction, AND, and OR operations can be performed with flags indicating carry, zero, negative, 
+                        and overflow conditions.
                     </p>
                     <p>
-                        Features: Verilog, GTKWave, Logic Analyzer
+                        <strong>Solution:</strong> I created the ALU in Verilog and verified its functionality with a 
+                        self-checking testbench that automatically compared outputs to expected values. I used GTKWave 
+                        waveform analysis to debug signal propagation and flag behavior during edge cases, running 
+                        simulations through Icarus Verilog to gain hands-on experience with the HDL toolchain.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project strengthened my understanding of Verilog syntax, binary 
+                        addition and subtraction (including wrapping and carry/borrow logic), and the significance of 
+                        MSB/LSB in signed 4-bit arithmetic. It also provided practical experience in testbench creation, 
+                        waveform debugging, and hardware verification processes.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Verilog, GTKWave, Logic Analyzer
                     </p>
                 </div>
             </div>
@@ -155,7 +173,6 @@
         <article class="project">
             <h3>Webcam Controller</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="electronics_images/WebcamMain.png" alt="Webcam Controller Circuit" class="clickable lightboxable">
@@ -177,15 +194,23 @@
 
                 <div class="project-text">
                     <p>
-                        My first time working with serial communication beyond Arduino interfaces and directly interacting with a computer. 
-                        This webcam control system enables zoom adjustment and reorientation using an Arduino controller, 
-                        along with an image capture feature that saves photos directly to the computer.
-                        It was cool to see how the Arduino could directly manipulate the computer interface and control the webcam in real-time.
-                        I also learned about UART and serial data transmission where the Arduino and computer could communicate with each other
-                        as long as they used the same baud rate without needing a clock signal for synchronization.
+                        <strong>Problem:</strong> Controlling a webcam manually can be inconvenient, and I wanted to explore 
+                        how hardware could directly interface with a computer to manipulate camera functions in real time. 
+                        This project gave me hands-on experience with serial communication beyond typical Arduino-only setups.
                     </p>
                     <p>
-                        Features: Serial Communication (UART), Tilt Sensor, Java (Processing), Arduino, C/C++
+                        <strong>Solution:</strong> I built a system where an Arduino controller adjusts zoom and orientation, 
+                        and captures images directly to the computer. Communication between the Arduino and computer 
+                        used UART serial transmission at a fixed baud rate, enabling real-time control without a separate 
+                        clock signal for synchronization.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project improved my understanding of UART and serial data communication, 
+                        as well as integrating hardware inputs to control software functionality. I gained experience 
+                        manipulating a computer interface from an embedded device and managing real-time data transfer.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Serial Communication (UART), Tilt Sensor, Java (Processing), Arduino, C/C++
                     </p>
                 </div>
             </div>
@@ -194,7 +219,6 @@
         <article class="project">
             <h3>Temperature Regulation Controller</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="electronics_images/TempMain.png" alt="Temperature Regulation Controller Circuit" class="clickable lightboxable">
@@ -216,17 +240,24 @@
 
                 <div class="project-text">
                     <p>
-                        I wanted to simulate a temperature-sensitive fan system that could be manually adjusted to simulate heating or cooling conditions.
-                        Even though there is no physical fan connected in the demo, the project was a way for me to test out DC motor control using an H-bridge.
-                        The LCD would display the current temperature and fan speed, while the fan automatically changes its speed based on the temperature.
-                        The device also included an automatic shutdown feature to simulate overheating conditions. I implemented the Arduino's EEPROM library
-                        to restore its last cooling/heating mode after reset or power loss. This taught me about electrically erasable programmable read-only
-                        memory (EEPROM) where the microcontroller can store small amounts of data in non-volatile memory. It was also the first time 
-                        I used an external power source (9V battery) to power the motor where I learned proper circuit design and power handling. 
-                        Before the H-bridge, I learned how to use a diode to prevent back EMF generated by the motor from damaging the circuit.
+                        <strong>Problem:</strong> Monitoring and controlling temperature is important for many devices, 
+                        and I wanted to simulate a system where a fan adjusts automatically based on temperature. 
+                        This project allowed me to explore DC motor control and embedded feedback systems.
                     </p>
                     <p>
-                        Features: Temperature Sensor, DC Motor, H-Bridge, EEPROM, Arduino, C/C++, LCD Display
+                        <strong>Solution:</strong> I built an Arduino-based system with an LCD that displayed temperature 
+                        and fan speed. The fan automatically adjusted speed according to temperature, and the device 
+                        included an automatic shutdown feature to simulate overheating. I used the EEPROM library to 
+                        restore the last mode after reset or power loss, and powered the motor with an external 9V battery, 
+                        learning to use a diode to prevent back EMF and an H-bridge for proper motor control.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me about EEPROM, motor control circuits, power handling, 
+                        and protecting circuits from back EMF. I gained experience integrating sensors, actuators, and 
+                        microcontrollers in a safe and functional embedded system.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Temperature Sensor, DC Motor, H-Bridge, EEPROM, Arduino, C/C++, LCD Display
                     </p>
                 </div>
             </div>
@@ -235,7 +266,6 @@
         <article class="project">
             <h3>Bomb Defusal Simulation</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="electronics_images/BombMain.png" alt="Bomb Defusal Simulation Circuit" class="clickable lightboxable"> 
@@ -257,13 +287,22 @@
 
                 <div class="project-text">
                     <p>
-                        This project gave me the chance to combine everything I had learned so far about input/output systems and I wanted to design an interactive
-                        game that had a time pressure element. The servo motor was used to simulate a lock mechanism that would produce the correct four digit code 
-                        to disarm the bomb. In the first iteration, the servo motor drew a lot of current, causing the LCD to appear dim and unreadable.
-                        I added a capacitor to store local charge, which smoothed out voltage dips and prevented brownouts.
+                        <strong>Problem:</strong> I wanted to design an interactive game that combined input/output systems 
+                        with a time-pressure challenge. The goal was to simulate disarming a bomb, giving players a 
+                        hands-on experience with real-time decision-making and feedback.
                     </p>
                     <p>
-                        Features: Time-Sensitive Design, Servo Motor, Capacitor, Arduino, C/C++, LCD Display
+                        <strong>Solution:</strong> I used a servo motor to simulate a lock mechanism that revealed a four-digit 
+                        code to disarm the bomb. The LCD displayed the game interface, and I added a capacitor to stabilize 
+                        voltage when the servo drew high current, preventing LCD dimming and brownouts.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me about power management, servo control, and integrating 
+                        interactive feedback systems. I gained practical experience in smoothing voltage fluctuations and 
+                        designing responsive embedded games.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Time-Sensitive Design, Servo Motor, Capacitor, Arduino, C/C++, LCD Display
                     </p>
                 </div>
             </div>
@@ -272,7 +311,6 @@
         <article class="project">
             <h3>Dual-Mode Piano Trainer</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="electronics_images/PianoMain.png" alt="Dual-Mode Piano Trainer Circuit" class="clickable lightboxable">
@@ -301,15 +339,23 @@
 
                 <div class="project-text">
                     <p>
-                        I wanted to create an interactive system that incorporated UI/UX elements and to practice different piezo buzzer tones.
-                        The dual-mode piano trainer features a menu selection where you can pick between a free-play mode or a practice mode.
-                        The free-play mode is just a simple five keyboard piano setup that plays different tones based on the key pressed.
-                        The practice mode provides three songs to choose from: Hot Cross Buns, Mary Had a Little Lamb, and Ode to Joy.
-                        Once selected, the device takes you through the song step-by-step with visual cues and audio error feedback.
-                        I learned how to make the LCD scroll through on each successful key press, along with an auto-scroller for longer texts.
+                        <strong>Problem:</strong> Learning to play an instrument can be challenging without real-time guidance. 
+                        I wanted to create an interactive system that combined UI/UX elements with audio feedback to make 
+                        practicing piano more engaging and effective.
                     </p>
                     <p>
-                        Features: UI/UX Design, Mode-Switching Control, Piezo Buzzer, Arduino, C/C++, LCD Display
+                        <strong>Solution:</strong> I built a dual-mode piano trainer with a menu to select free-play or practice 
+                        mode. Free-play allows a simple five-key setup with piezo buzzer tones, while practice mode guides 
+                        the user through songs like Hot Cross Buns, Mary Had a Little Lamb, and Ode to Joy with step-by-step 
+                        visual cues and audio error feedback. The LCD displays scrolling text for notes and song instructions.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project improved my skills in UI/UX design, interactive feedback systems, 
+                        and embedded programming. I learned to manage LCD scrolling for dynamic content, implement mode 
+                        switching, and provide real-time audio and visual responses to user input.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> UI/UX Design, Mode-Switching Control, Piezo Buzzer, Arduino, C/C++, LCD Display
                     </p>
                 </div>
             </div>
@@ -318,7 +364,6 @@
         <article class="project">
             <h3>Morse Code Simulator</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="electronics_images/MorseMain.png" alt="Morse Code Simulator Circuit" class="clickable lightboxable">
@@ -340,16 +385,22 @@
 
                 <div class="project-text">
                     <p>
-                        This was my first big jump into embedded systems and I wanted to create a simple device that took in Morse code inputs
-                        and translated them into text. The LED and piezo buzzer produced visual and audio feedback for each button press. It was also
-                        my first time using an LCD screen and noticed the wire connection was different from the simulation I ran. This was my first experience
-                        learning about I<sup>2</sup>C and parallel communication protocols where the HD44780 LCD ran on parallel which meant more wires to 
-                        connect. In I<sup>2</sup>C protocol there are two signal lines, SCL and SDA which allows for more efficient communication with fewer wires. 
-                        I also learned about master/slave architecture and how data is transmitted in packets using the SDA while the SCL helps synchronize transfer.
-                        The setup also resulted in a dim display which meant I had to apply a source for the backlight pins on the LCD without blowing it up.
+                        <strong>Problem:</strong> Learning Morse code can be challenging, and I wanted to create a simple embedded 
+                        device that translated button-pressed Morse code into text while providing visual and audio feedback.
                     </p>
                     <p>
-                        Features: I<sup>2</sup>C Communication, Parallel Communication, Piezo Buzzer, Arduino, C/C++, LCD Display
+                        <strong>Solution:</strong> I built a system using an LED and piezo buzzer for feedback and an LCD to display 
+                        the translated text. I explored both parallel communication and I<sup>2</sup>C protocols, learning how 
+                        to connect the HD44780 LCD, manage signal lines (SCL/SDA), and handle master/slave communication 
+                        for efficient data transfer. I also adjusted the backlight power to ensure proper display brightness.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me about embedded I/O, communication protocols, and integrating 
+                        visual and audio outputs. I gained experience with LCD interfacing, protocol differences, and practical 
+                        troubleshooting for display and power management.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Serial Communication (I<sup>2</sup>C), Parallel Communication, Piezo Buzzer, Arduino, C/C++, LCD Display
                     </p>
                 </div>
             </div>
@@ -358,7 +409,6 @@
         <article class="project">
             <h3>Nightlight Detector</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="electronics_images/NightMain.png" alt="Nightlight Detector Circuit" class="clickable lightboxable">
@@ -380,13 +430,22 @@
 
                 <div class="project-text">
                     <p>
-                        I wanted to experiment with different sensors and designed a nightlight detector that senses ambient light levels while changing 
-                        the RGB LED white light intensity. It was my first time working with an RGB LED and I learned how to mix colors based on the analog reading
-                        from the phototransistor. I had to map and constrain the analog reading to a range of 0-255 to get the correct colour intensity. For analog
-                        sensors, there was some calibration done to get the correct range of values to work with. 
+                        <strong>Problem:</strong> I wanted to explore how sensors can interact with lighting to create a responsive 
+                        nightlight. The goal was to adjust light intensity automatically based on ambient conditions, 
+                        providing a simple and interactive learning experience.
                     </p>
                     <p>
-                        Features: Phototransistor, RGB LED, Arduino, C/C++
+                        <strong>Solution:</strong> I built a system using a phototransistor to sense ambient light and an RGB 
+                        LED to display white light at varying intensity. I mapped and constrained analog readings to the 
+                        0–255 range to control color mixing accurately and calibrated the sensor for correct readings.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me how to integrate analog sensors with RGB LEDs, 
+                        perform calibration, and manipulate color intensity in response to real-world inputs. I gained 
+                        practical experience in sensor data mapping and responsive embedded lighting systems.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Phototransistor, RGB LED, Arduino, C/C++
                     </p>
                 </div>
             </div>
@@ -395,7 +454,6 @@
         <article class="project">
             <h3>Whack-A-Mole Game</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="electronics_images/WhackMain.png" alt="Whack-A-Mole Game Circuit" class="clickable lightboxable">
@@ -417,13 +475,23 @@
 
                 <div class="project-text">
                     <p>
-                        This was my very first physical embedded systems project where I took a simulated assignment from class and built it in real life.
-                        The game logic involved random LED activations which required the player to hit the correct button within the time frame. There is also
-                        an inactivity timer that resets the game and flashing LED sequences based on performance.
-                        I learned about button debouncing and non-blocking timing using the millis() function to keep track of time without pausing the program.
+                        <strong>Problem:</strong> I wanted to bring a simulated class assignment into a physical system 
+                        to explore real-time embedded gameplay. The goal was to create an interactive game where 
+                        players respond to visual cues under time constraints.
                     </p>
                     <p>
-                        Features: Real-Time Game Logic, Button Debouncing, Non-Blocking Timing, Arduino, C/C++
+                        <strong>Solution:</strong> I built a game with randomly activating LEDs, requiring the player 
+                        to press the correct button within a time limit. The system included an inactivity timer that 
+                        resets the game and dynamic LED sequences based on performance. I implemented button debouncing 
+                        and non-blocking timing using the millis() function to track time without pausing execution.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me about real-time game logic, handling user input 
+                        reliably, and managing time in embedded systems. I gained hands-on experience with responsive 
+                        hardware design and programming techniques for interactive devices.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Real-Time Game Logic, Button Debouncing, Non-Blocking Timing, Arduino, C/C++
                     </p>
                 </div>
             </div>

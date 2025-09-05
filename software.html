@@ -77,7 +77,6 @@
         <article class="project">
             <h3>Automated Sensor Logger & Reporter</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="software_images/LinuxTempBash.png" alt="Linux Terminal Executing Automation Script" class="clickable lightboxable">
@@ -97,16 +96,27 @@
 
                 <div class="project-text">
                     <p>
-                        My goal for this project was to automate sensor acquisition from an Arduino and interface it with Linux for QA workflows. Since many embedded systems integrate with Linux environments,
-                        I wanted hands-on experience with shell scripting for automated testing. I developed an automation pipeline that collected sensor data, logged it into CSV with timestamps,
-                        generated plots, flagged anomalies, and emailed reports with logs and visualizations. This was my first time working in Linux using WSL and Ubuntu. I learned to transfer files
-                        from Windows into Linux, configure Gmail integration by editing Linux mutt settings with nano, and automate workflows with Bash. The main challenge was serial communication 
-                        due to WSL limitations where it doesn't support direct access to hardware COM ports, so I installed com2tcp to forward Arduino data into the Linux environment by hosting a local TCP 
-                        bridge directly on my computer. I debugged issues with baud-rate mismatches, COM permissions, IP addressing, and bypassing DSR handshakes in the TCP protocol.
-                        By comparing Arduino's serial monitor with Linux netcat (nc) outputs, I was able to validate and properly parse the incoming data stream.
+                        <strong>Problem:</strong> Manual sensor logging during QA is time-consuming and error-prone. 
+                        Since many embedded systems rely on Linux for automated testing, I designed a system to 
+                        streamline Arduino sensor data acquisition, anomaly detection, and reporting. This project 
+                        also gave me hands-on experience with shell scripting and building end-to-end automation 
+                        pipelines in a Linux environment.
                     </p>
                     <p>
-                        Features: Linux OS, Bash, TCP/IP Protocol, Arduino, C/C++, Temperature Sensor
+                        <strong>Solution:</strong> I built a Bash-based automation pipeline that collected sensor data 
+                        from an Arduino, logged it to CSV with timestamps, generated plots, flagged anomalies, and 
+                        emailed reports containing logs and visualizations. This involved integrating Ubuntu on WSL, 
+                        serial data handling, and automated report generation using Linux utilities.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> The main challenge was that WSL does not allow direct access to 
+                        hardware COM ports. To solve this, I set up a TCP bridge (com2tcp) to forward Arduino serial 
+                        data into Linux, validated the stream using netcat, and resolved parsing/permission issues. 
+                        Through this project, I strengthened my skills in Linux automation, serial communication, 
+                        and end-to-end QA workflow design.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Linux OS, Bash, TCP/IP Protocol, Arduino, C/C++, Temperature Sensor
                     </p>
                 </div>
             </div>
@@ -115,7 +125,6 @@
         <article class="project">
             <h3>Live ESPN Scoreboard</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="software_images/SportMain.png" alt="Live Scoreboard Circuit" class="clickable lightboxable">
@@ -137,16 +146,26 @@
 
                 <div class="project-text">
                     <p>
-                        I practiced with API request handling by developing an Arduino-based real-time scoreboard system that fetches live NBA,
-                        NFL, and MLB data from ESPN API endpoints, navigating nested JSON structures unique to each sport. Since I had to work with 
-                        multiple JSON formats, I practiced proper, robust debugging techniques by using serial print statements to verify accurate
-                        data transfer and handle edge cases. The LCD dynamically displays team scores, game clocks, and start times, while LED indicators 
-                        would flash when a team scores. I learned to use the Arduino/C++ struct to encapsulate reusable functionality for button 
-                        debouncing and LED flashes, improving modularity and code efficiency. I ran into challenges with parsing through different
-                        API formats and getting the information I needed.
+                        <strong>Problem:</strong> Sports fans want to follow live games in real time, but scoreboards 
+                        depend on constantly changing data feeds that come in different formats. I built this project 
+                        to explore how live sports data could be pulled from APIs and displayed on a simple, interactive 
+                        Arduino-based system.
                     </p>
                     <p>
-                        Features: REST API Integration, JSON, Serial Communication (UART), Java (Processing), Arduino, C/C++
+                        <strong>Solution:</strong> I built a system that parsed API responses, displayed team scores, 
+                        game clocks, and start times on an LCD, and used LED indicators to flash when a team scored. 
+                        To ensure reliability, I implemented serial print debugging for data validation and created 
+                        reusable C++ structs to encapsulate button debouncing and LED functionality, improving modularity 
+                        and efficiency.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> A key challenge was navigating through different JSON formats to extract 
+                        the needed information. By building structured parsing logic and validating outputs at each step, 
+                        I gained experience handling edge cases in real-time data processing. This project improved my 
+                        skills in API integration, embedded debugging, and modular C++ development for hardware systems.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Arduino, C/C++, ESPN APIs, JSON Parsing, LCD Display, LED Indicators
                     </p>
                 </div>
             </div>
@@ -155,7 +174,6 @@
         <article class="project">
             <h3>Personal Project Website</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="software_images/WebsiteHTML.png" alt="HTML Profile Layout" class="clickable lightboxable">
@@ -175,18 +193,25 @@
 
                 <div class="project-text">
                     <p>
-                        This is my first website that I designed and built from scratch with no external templates. I learned how to use HTML to 
-                        design the overall structure of my website and define key elements for organization. Then I used CSS to add colour and
-                        improve the visual presentation. Finally, I included some JavaScript scripts to add interactivity and responses to button
-                        clicks or mouse movements for a more engaging experience. This project also taught me a lot about user interface and user
-                        experience (UI/UX) design because I wanted to make sure that the most relevant pieces are highlighted. I aimed for a more 
-                        minimalistic design, with darker and neutral tones to make it easier on the eyes. I also included different colour schemes
-                        for each project page to create a new theme for each skill area. The images are also enlargeable using a lightbox and modal 
-                        concept in CSS and JavaScript to make it easier to see the photos. There are also clickable YouTube links for video demonstrations
-                        that automatically takes the user to a new page.
+                        <strong>Problem:</strong> This was my first website that I designed and built completely from 
+                        scratch without using external templates. I wanted to create a clean, organized way to present 
+                        my projects while learning the fundamentals of web development and UI/UX design.
                     </p>
                     <p>
-                        Features: HTML, CSS, JavaScript, UI/UX Design
+                        <strong>Solution:</strong> I learned to use HTML to define the overall structure of the website, 
+                        CSS to add colour and improve visual presentation, and JavaScript to add interactivity through 
+                        button clicks and mouse movements. I also applied minimalistic design principles with darker 
+                        and neutral tones for readability, and gave each project page a unique colour theme to highlight 
+                        different skill areas.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me the importance of user interface and user 
+                        experience (UI/UX) design, as I wanted the most relevant information to stand out. I implemented 
+                        enlargeable images using a lightbox and modal concept in CSS and JavaScript, and embedded 
+                        clickable YouTube links for video demonstrations to make navigation more engaging.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> HTML, CSS, JavaScript, UI/UX Design
                     </p>
                 </div>
             </div>
@@ -195,7 +220,6 @@
         <article class="project">
             <h3>Live Weather Monitor</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="software_images/WeatherMain.png" alt="Weather Monitor Circuit" class="clickable lightboxable">
@@ -217,16 +241,27 @@
 
                 <div class="project-text">
                     <p>
-                        I designed a weather monitoring system that accesses the weather and temperature from Vancouver, Toronto, Ottawa, and Markham. 
-                        I learned how to use the OpenWeatherMap REST API to fetch live weather data from the internet and display it on an LCD screen. 
-                        The system includes an RGB LED that changes colour based on the weather conditions and audio alerts for temperature changes.
-                        This was also the first time where I had serial communication between the Java program and the Arduino, where both sides were writing
-                        on the same serial port to send and receive data. Normally, I would only have the Arduino sending data to the computer, but this time the 
-                        computer sends data to the Arduino to change the LED or buzzer sound. I also accessed the internet from my program for the first time 
-                        setting up URL connection and parsing JSON data, extending beyond local data processing.
+                        <strong>Problem:</strong> Weather conditions affect daily life, and being able to access real-time 
+                        weather data makes it easier to plan ahead. I designed a system that monitors live weather and 
+                        temperature from Vancouver, Toronto, Ottawa, and Markham to explore how APIs can enhance 
+                        embedded systems with real-world data.
                     </p>
                     <p>
-                        Features: REST API Integration, JSON, Serial Communication (UART), Piezo Buzzer, RGB LED, Java (Processing), Arduino, C/C++
+                        <strong>Solution:</strong> I used the OpenWeatherMap REST API to fetch live weather data and display 
+                        it on an LCD screen. The system included an RGB LED that changes colour based on weather conditions 
+                        and audio alerts that trigger when temperature changes. I also implemented two-way serial 
+                        communication between a Java program and the Arduino, where both sides could send and receive 
+                        commands on the same port.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This was my first time integrating internet access into a program by setting 
+                        up URL connections and parsing JSON data, extending beyond local processing. I also gained 
+                        experience with bidirectional serial communication, learning how to coordinate Arduino and computer 
+                        inputs to control the LED and buzzer in real time.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Arduino, Java, REST API, JSON Parsing, OpenWeatherMap, LCD Display, RGB LED, 
+                        Audio Alerts, Serial Communication
                     </p>
                 </div>
             </div>
@@ -235,7 +270,6 @@
         <article class="project">
             <h3>Muscle Movement Data & Signal Processing</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="software_images/TrackerPlot.png" alt="Marker-Based Motion Tracker Application Setup" class="clickable lightboxable">
@@ -254,15 +288,26 @@
                 </div>
                 <div class="project-text">
                     <p>
-                        In this project I analyzed muscle movement using surface electromyography (EMG), motion tracking, and force plate data.
-                        I used a combination of Python and MATLAB to process and plot the data, including filtering, normalization, and statistical analysis.
-                        The purpose of this project was to assess muscle activation timing and force generation for grip strength. Another study was to 
-                        analyze stroke rehabilitation by simulating impaired hand movements and quantifying kinematic movement patterns. The force plate study 
-                        was done to measure center of pressure (CoP) and center of mass (CoM) for different balancing techniques. This was done to compare 
-                        proprioception and balance control during rehabilitation exercises.
+                        <strong>Problem:</strong> Understanding muscle activation and balance control is important for 
+                        rehabilitation and performance assessment. I analyzed muscle movement, hand function, and 
+                        balance to study grip strength, stroke rehabilitation, and proprioception using real-world 
+                        biomechanical data.
                     </p>
                     <p>
-                        Features: Python, MATLAB, EMG, Motion Tracking, Biomechanics, Force Plate, Signal Processing, Data Analysis
+                        <strong>Solution:</strong> I collected surface EMG, motion tracking, and force plate data, and 
+                        used Python and MATLAB to process and visualize it. This included filtering signals, normalizing 
+                        data, and performing statistical analysis to assess muscle activation timing, force generation, 
+                        and kinematic movement patterns.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> By comparing center of pressure (CoP) and center of mass (CoM) across 
+                        different balance exercises, I was able to quantify proprioception and balance control, gaining 
+                        hands-on experience in biomechanics data analysis, signal processing, and rehabilitation 
+                        assessment.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Python, MATLAB, EMG, Motion Tracking, Biomechanics, Force Plate, 
+                        Signal Processing, Data Analysis
                     </p>
                 </div>
             </div>
@@ -271,7 +316,6 @@
         <article class="project">
             <h3>Computational Modeling of Biological Systems</h3>
             <div class="project-content">
-
                 <div class="project-images">
                     <figure>
                         <img src="software_images/GeneCircuitRepressilator.png" alt="Gene Circuit Repressilator" class="clickable lightboxable"> 
@@ -296,15 +340,24 @@
 
                 <div class="project-text">
                     <p>
-                        These are some plots from my computational modeling projects in biophysics. I worked with various models including 
-                        gene circuits, predator-prey population dynamics, Michaelis-Menten and inhibition enzyme kinetics. I used Python to simulate and solve
-                        specific problems. For example, I simulated gene circuits using ordinary differential equations (ODEs) to model transcriptional regulation
-                        and feedback loops. I also performed stability analysis on population models to evaluate equilibrium behaviour and dynamics. 
-                        I used linear and non-linear regression fitting to enzyme kinetics data to solve for system parameters.
-                        Finally, I solved boundary value problems (BVP) using the shooting method for mass transport and reaction-diffusion systems.
+                        <strong>Problem:</strong> Understanding biological systems often requires predicting how molecules, 
+                        enzymes, or populations behave over time. I worked on computational models to study gene circuits, 
+                        population dynamics, and enzyme kinetics to gain insight into system behavior and regulation.
                     </p>
                     <p>
-                        Features: Python, ODE Simulation, Kinetic Modeling, Data Fitting, Stability Analysis, Enzyme Kinetics, Shooting Method
+                        <strong>Solution:</strong> I used Python to simulate ordinary differential equations (ODEs) for 
+                        gene circuits and feedback loops, perform stability analysis on predator-prey population models, 
+                        fit experimental enzyme kinetics data using linear and non-linear regression, and solve boundary 
+                        value problems for mass transport and reaction-diffusion systems using the shooting method.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> Through these simulations, I learned how to analyze system dynamics, 
+                        predict equilibrium behavior, estimate kinetic parameters, and solve complex BVPs. This strengthened 
+                        my skills in computational modeling, data fitting, and quantitative analysis in biophysics contexts.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Python, ODE Simulation, Kinetic Modeling, Data Fitting, Stability Analysis, 
+                        Enzyme Kinetics, Shooting Method
                     </p>
                 </div>
             </div>

@@ -30,42 +30,52 @@
             <h2 style="color: #d3d3d3">Recent Project Highlights</h2>
 
             <article class="software-accent project">
-            <h3>Automated Sensor Logger & Reporter</h3>
-            <div class="project-content">
+                <h3>Automated Sensor Logger & Reporter</h3>
+                <div class="project-content">
+                    <div class="project-images">
+                        <figure>
+                            <img src="software_images/LinuxTempBash.png" alt="Linux Terminal Executing Automation Script" class="clickable lightboxable">
+                            <figcaption>Linux Terminal Executing Automation Script</figcaption>
+                        </figure>
 
-                <div class="project-images">
-                    <figure>
-                        <img src="software_images/LinuxTempBash.png" alt="Linux Terminal Executing Automation Script" class="clickable lightboxable">
-                        <figcaption>Linux Terminal Executing Automation Script</figcaption>
-                    </figure>
+                        <figure>
+                            <img src="software_images/LinuxTempEmail.png" alt="Email Report with Flags & Plot" class="clickable lightboxable">
+                            <figcaption>Email Report with Flags & Plot</figcaption>
+                        </figure>
 
-                    <figure>
-                        <img src="software_images/LinuxTempEmail.png" alt="Email Report with Flags & Plot" class="clickable lightboxable">
-                        <figcaption>Email Report with Flags & Plot</figcaption>
-                    </figure>
+                        <figure>
+                            <img src="software_images/LinuxTempPlot.png" alt="Plot of Temperature Reading Over Time" class="clickable lightboxable">
+                            <figcaption>Plot of Temperature Reading Over Time</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img src="software_images/LinuxTempPlot.png" alt="Plot of Temperature Reading Over Time" class="clickable lightboxable">
-                        <figcaption>Plot of Temperature Reading Over Time</figcaption>
-                    </figure>
+                    <div class="project-text">
+                        <p>
+                            <strong>Problem:</strong> Manual sensor logging during QA is time-consuming and error-prone. 
+                            Since many embedded systems rely on Linux for automated testing, I designed a system to 
+                            streamline Arduino sensor data acquisition, anomaly detection, and reporting. This project 
+                            also gave me hands-on experience with shell scripting and building end-to-end automation 
+                            pipelines in a Linux environment.
+                        </p>
+                        <p>
+                            <strong>Solution:</strong> I built a Bash-based automation pipeline that collected sensor data 
+                            from an Arduino, logged it to CSV with timestamps, generated plots, flagged anomalies, and 
+                            emailed reports containing logs and visualizations. This involved integrating Ubuntu on WSL, 
+                            serial data handling, and automated report generation using Linux utilities.
+                        </p>
+                        <p>
+                            <strong>Impact:</strong> The main challenge was that WSL does not allow direct access to 
+                            hardware COM ports. To solve this, I set up a TCP bridge (com2tcp) to forward Arduino serial 
+                            data into Linux, validated the stream using netcat, and resolved parsing/permission issues. 
+                            Through this project, I strengthened my skills in Linux automation, serial communication, 
+                            and end-to-end QA workflow design.
+                        </p>
+                        <p>
+                            <strong>Features:</strong> Linux OS, Bash, TCP/IP Protocol, Arduino, C/C++, Temperature Sensor
+                        </p>
+                    </div>
                 </div>
-
-                <div class="project-text">
-                    <p>
-                        My goal for this project was to automate sensor acquisition from an Arduino and interface it with Linux for QA workflows. Since many embedded systems integrate with Linux environments,
-                        I wanted hands-on experience with shell scripting for automated testing. I developed an automation pipeline that collected sensor data, logged it into CSV with timestamps,
-                        generated plots, flagged anomalies, and emailed reports with logs and visualizations. This was my first time working in Linux using WSL and Ubuntu. I learned to transfer files
-                        from Windows into Linux, configure Gmail integration by editing Linux mutt settings with nano, and automate workflows with Bash. The main challenge was serial communication 
-                        due to WSL limitations where it doesn't support direct access to hardware COM ports, so I installed com2tcp to forward Arduino data into the Linux environment by hosting a local TCP 
-                        bridge directly on my computer. I debugged issues with baud-rate mismatches, COM permissions, IP addressing, and bypassing DSR handshakes in the TCP protocol.
-                        By comparing Arduino's serial monitor with Linux netcat (nc) outputs, I was able to validate and properly parse the incoming data stream.
-                    </p>
-                    <p>
-                        Features: Linux OS, Bash, TCP/IP Protocol, Arduino, C/C++, Temperature Sensor
-                    </p>
-                </div>
-            </div>
-        </article>
+            </article>
 
             <article class="electronics-accent project">
                 <h3>Spotify Controller</h3>
@@ -91,17 +101,26 @@
 
                     <div class="project-text">
                         <p>
-                            For this project I designed a Spotify controller that can play/pause, skip forward/back, and adjust the volume.
-                            I integrated an LCD display to show the current song, artist, remaining time, and added auto-scrolling for longer titles.
-                            I learned how to handle token-based authentication (OAuth) to access my personal Spotify account, and leveraged the pyserial 
-                            and spotipy packages to interact with playback, volume, and track information. It was also interesting to explore
-                            serial communication between Python and Arduino, encoding Python's Unicode strings into bytes for transmission and decoding bytes
-                            received from the Arduino. Since this is my third project working with API requests, I am a lot more comfortable parsing JSON data and receiving/transmitting
-                            data over serial to the Arduino. I really liked this project as it gave me the opportunity to explore managing continuous serial data streams, 
-                            handling redirect URIs for OAuth authentication, and integrating hardware with the Spotify Web API to create a responsive, interactive music controller.
+                            <strong>Problem:</strong> Controlling music playback while working or doing other tasks can be 
+                            inefficient. I designed a project to create a responsive, interactive controller that allows 
+                            play/pause, track skipping, and volume adjustment for Spotify using hardware integration.
                         </p>
                         <p>
-                            Features: Python, Spotify Web API, Token-Based Authentication (OAuth), Playback Control, Serial Communication, Arduino, C/C++, LCD Display
+                            <strong>Solution:</strong> I integrated an Arduino with an LCD display to show the current song, 
+                            artist, and remaining time, with auto-scrolling for longer titles. I used Python with the 
+                            pyserial and spotipy packages, handling OAuth token-based authentication to interact with 
+                            Spotify playback. Serial communication between Python and Arduino allowed sending and receiving 
+                            Unicode strings encoded as bytes for smooth real-time updates.
+                        </p>
+                        <p>
+                            <strong>Impact:</strong> This project strengthened my skills in API integration, continuous 
+                            serial data management, OAuth authentication, and hardware/software interfacing. It also 
+                            improved my ability to parse JSON data, handle redirect URIs, and build interactive systems 
+                            that combine software and physical components.
+                        </p>
+                        <p>
+                            <strong>Features:</strong> Python, Spotify Web API, Token-Based Authentication (OAuth), Playback 
+                            Control, Serial Communication, Arduino, C/C++, LCD Display
                         </p>
                     </div>
                 </div>
@@ -110,7 +129,6 @@
             <article class="electronics-accent project">
                 <h3>4-Bit Arithmetic Logic Unit (ALU)</h3>
                 <div class="project-content">
-
                     <div class="project-images">
                         <figure>
                             <img src="electronics_images/ALUTestCase.png" alt="ALU Testbench Console Output" class="clickable lightboxable">
@@ -127,18 +145,28 @@
                             <figcaption>Expanded 4-Bit ALU Result Signals</figcaption>
                         </figure>
                     </div>
+
                     <div class="project-text">
                         <p>
-                            For my first Verilog project, I designed a 4-bit Arithmetic Logic Unit (ALU) supporting addition, subtraction, AND, and OR operations. 
-                            The design includes carry, zero, negative, and overflow flags to indicate result conditions. To verify functionality, I created a self-checking 
-                            testbench that automatically compared ALU outputs against expected values, helping me practice test case handling and QA procedures. I also used 
-                            GTKWave waveform analysis to debug signal propagation over time and to inspect how flags behaved during edge cases. Running simulations with Icarus 
-                            Verilog (.vvp producing .vcd for GTKWave) gave me practical experience with the HDL toolchain. Through this project, I gained hands-on 
-                            understanding of Verilog syntax, binary addition/subtraction (including wrapping and carry/borrow logic), and the role of MSB/LSB in signed 
-                            4-bit arithmetic.
+                            <strong>Problem:</strong> Understanding how basic arithmetic and logic operations are implemented 
+                            in hardware is fundamental to digital design. I designed a 4-bit ALU to explore how addition, 
+                            subtraction, AND, and OR operations can be performed with flags indicating carry, zero, negative, 
+                            and overflow conditions.
                         </p>
                         <p>
-                            Features: Verilog, GTKWave, Logic Analyzer
+                            <strong>Solution:</strong> I created the ALU in Verilog and verified its functionality with a 
+                            self-checking testbench that automatically compared outputs to expected values. I used GTKWave 
+                            waveform analysis to debug signal propagation and flag behavior during edge cases, running 
+                            simulations through Icarus Verilog to gain hands-on experience with the HDL toolchain.
+                        </p>
+                        <p>
+                            <strong>Impact:</strong> This project strengthened my understanding of Verilog syntax, binary 
+                            addition and subtraction (including wrapping and carry/borrow logic), and the significance of 
+                            MSB/LSB in signed 4-bit arithmetic. It also provided practical experience in testbench creation, 
+                            waveform debugging, and hardware verification processes.
+                        </p>
+                        <p>
+                            <strong>Features:</strong> Verilog, GTKWave, Logic Analyzer
                         </p>
                     </div>
                 </div>
