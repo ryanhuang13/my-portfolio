@@ -30,48 +30,50 @@
             <h2 style="color: #d3d3d3">Recent Project Highlights</h2>
 
             <article class="software-accent project">
-                <h3>Automated Sensor Logger & Reporter</h3>
+                <h3>Breast Cancer Genomic Analysis Using Machine Learning</h3>
                 <div class="project-content">
                     <div class="project-images">
                         <figure>
-                            <img src="software_images/LinuxTempBash.png" alt="Linux Terminal Executing Automation Script" class="clickable lightboxable">
-                            <figcaption>Linux Terminal Executing Automation Script</figcaption>
+                            <img src="software_images/MLHeatmap.png" alt="Heatmap Comparing Differential Expression Genes" class="clickable lightboxable">
+                            <figcaption>Heatmap of Top Differentially Expressed Genes</figcaption>
                         </figure>
 
                         <figure>
-                            <img src="software_images/LinuxTempEmail.png" alt="Email Report with Flags & Plot" class="clickable lightboxable">
-                            <figcaption>Email Report with Flags & Plot</figcaption>
+                            <img src="software_images/MLPCA.png" alt="Principal Component Analysis of RNA Sequence Data" class="clickable lightboxable">
+                            <figcaption>PCA Showing Five Transcriptomic Clusters</figcaption>
                         </figure>
 
                         <figure>
-                            <img src="software_images/LinuxTempPlot.png" alt="Plot of Temperature Reading Over Time" class="clickable lightboxable">
-                            <figcaption>Plot of Temperature Reading Over Time</figcaption>
+                            <img src="software_images/MLDendrogram.png" alt="Hierarchical Clustering of Mutated Genes" class="clickable lightboxable">
+                            <figcaption>Hierarchical Clustering of Frequently Mutated Genes</figcaption>
                         </figure>
                     </div>
 
                     <div class="project-text">
                         <p>
-                            <strong>Problem:</strong> Manual sensor logging during QA is time-consuming and error-prone. 
-                            Since many embedded systems rely on Linux for automated testing, I designed a system to 
-                            streamline Arduino sensor data acquisition, anomaly detection, and reporting. This project 
-                            also gave me hands-on experience with shell scripting and building end-to-end automation 
-                            pipelines in a Linux environment.
+                            <strong>Problem:</strong> Breast cancer patients exhibit high biological variations, and these
+                            datasets contain thousands of genes which makes it difficult to identify meaningful biological drivers. 
+                            It is also valuable in cancer research to find patient subgroups that share similar molecular mechanisms, 
+                            tumour behaviour, and clinical outcomes. With the help of integrating machine learning techniques with classical 
+                            biostatistics, my goal was to explore underlying biological structure and patterns across thousands of patients 
+                            by analyzing gene expression, mutation profiles, and clinical conditions.
                         </p>
                         <p>
-                            <strong>Solution:</strong> I built a Bash-based automation pipeline that collected sensor data 
-                            from an Arduino, logged it to CSV with timestamps, generated plots, flagged anomalies, and 
-                            emailed reports containing logs and visualizations. This involved integrating Ubuntu on WSL, 
-                            serial data handling, and automated report generation using Linux utilities.
+                            <strong>Solution:</strong> I designed a complete bioinformatics pipeline using clustering  
+                            and statistical modelling on TCGA breast cancer patient data. This involved examining mutation, 
+                            expression, and clinical metadata using an integrated framework of unsupervised learning, differential expression, 
+                            pathway enrichment, and statistical tests. The analysis revealed that immune-related pathways were the primary 
+                            drivers of transcriptomic differences, while neither mutation or expression clusters showed differences in patient outcomes.
                         </p>
                         <p>
-                            <strong>Impact:</strong> The main challenge was that WSL does not allow direct access to 
-                            hardware COM ports. To solve this, I set up a TCP bridge (com2tcp) to forward Arduino serial 
-                            data into Linux, validated the stream using netcat, and resolved parsing/permission issues. 
-                            Through this project, I strengthened my skills in Linux automation, serial communication, 
-                            and end-to-end QA workflow design.
+                            <strong>Impact:</strong> This project improved my skills in machine learning for biological data, 
+                            statistical hypothesis testing, and interpretation of high-dimensional genomic datasets. 
+                            I gained experience in dimensionality reduction techniques like PCA for visualizing complex data and exposure
+                            to clustering algorithms to identify patterns. The biological results reveal the complexity of cancer outcomes with 
+                            many factors beyond simple genomic profiles that shape disease behaviour.
                         </p>
                         <p>
-                            <strong>Features:</strong> Linux OS, Bash, TCP/IP Protocol, Arduino, C/C++, Temperature Sensor
+                            <strong>Features:</strong> PCA, Clustering, DESeq2, R, KEGG/GO Enrichment, Survival Analysis, Statistical Testing
                         </p>
                     </div>
                 </div>
@@ -199,11 +201,12 @@
                 </a>
 
                 <a href="software.html" class="skill-box software-accent clickable">
-                    <h3>IDEs & Tools</h3>
+                    <h3>Machine Learning</h3>
                     <ul>
-                        <li>Git & Github</li>
-                        <li>Linux/Bash</li>
-                        <li>IDE (VS Code, IntelliJ, Arduino)</li>
+                        <li>Clustering</li>
+                        <li>Dimensionality Reduction</li>
+                        <li>Regression</li>
+                        <li>Classification</li>
                     </ul>
                 </a>
 
@@ -220,8 +223,9 @@
                     <h3>Embedded Systems</h3>
                     <ul>
                         <li>Arduino, ESP32, Raspberry Pi</li>
-                        <li>Serial Communication Protocol (I<sup>2</sup>C, UART, SPI)</li>
-                        <li>Network Protocols (IP, TCP/UDP, DHCP, ICMP)</li>
+                        <li>Serial Communication Protocol</li>
+                        <li>Network Protocols</li>
+                        <li>Linux/Bash</li>
                     </ul>
                 </a>
             </div>

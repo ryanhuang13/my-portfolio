@@ -53,16 +53,6 @@
                 </div>
 
                 <div class="skill-box clickable" style="cursor: default">
-                    <h3>IDEs</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>IntelliJ</li>
-                        <li>Arduino IDE</li>
-                        <li>Processing IDE</li>
-                    </ul>
-                </div>
-
-                <div class="skill-box clickable" style="cursor: default">
                     <h3>Python Libraries</h3>
                     <ul>
                         <li>NumPy</li>
@@ -71,8 +61,69 @@
                         <li>SciPy</li>
                     </ul>
                 </div>
+
+                <div class="skill-box clickable" style="cursor: default">
+                    <h3>Machine Learning & Data Science</h3>
+                    <ul>
+                        <li>Unsupervised Learning (PCA, Clustering)</li>
+                        <li>Supervised Learning (Regression, Classification)</li>
+                        <li>Dimensionality Reduction</li>
+                        <li>Feature Extraction</li>
+                        <li>Statistical Modeling & Testing</li>
+                    </ul>
+                </div>
             </div>
         </section>
+
+        <article class="project">
+            <h3>Breast Cancer Genomic Analysis Using Machine Learning</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="software_images/MLHeatmap.png" alt="Heatmap Comparing Differential Expression Genes" class="clickable lightboxable">
+                        <figcaption>Heatmap of Top Differentially Expressed Genes</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="software_images/MLPCA.png" alt="Principal Component Analysis of RNA Sequence Data" class="clickable lightboxable">
+                        <figcaption>PCA Showing Five Transcriptomic Clusters</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="software_images/MLDendrogram.png" alt="Hierarchical Clustering of Mutated Genes" class="clickable lightboxable">
+                        <figcaption>Hierarchical Clustering of Frequently Mutated Genes</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Breast cancer patients exhibit high biological variations, and these
+                        datasets contain thousands of genes which makes it difficult to identify meaningful biological drivers. 
+                        It is also valuable in cancer research to find patient subgroups that share similar molecular mechanisms, 
+                        tumour behaviour, and clinical outcomes. With the help of integrating machine learning techniques with classical 
+                        biostatistics, my goal was to explore underlying biological structure and patterns across thousands of patients 
+                        by analyzing gene expression, mutation profiles, and clinical conditions.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I designed a complete bioinformatics pipeline using clustering  
+                        and statistical modelling on TCGA breast cancer patient data. This involved examining mutation, 
+                        expression, and clinical metadata using an integrated framework of unsupervised learning, differential expression, 
+                        pathway enrichment, and statistical tests. The analysis revealed that immune-related pathways were the primary 
+                        drivers of transcriptomic differences, while neither mutation or expression clusters showed differences in patient outcomes.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project improved my skills in machine learning for biological data, 
+                        statistical hypothesis testing, and interpretation of high-dimensional genomic datasets. 
+                        I gained experience in dimensionality reduction techniques like PCA for visualizing complex data and exposure
+                        to clustering algorithms to identify patterns. The biological results reveal the complexity of cancer outcomes with 
+                        many factors beyond simple genomic profiles that shape disease behaviour.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> PCA, Clustering, DESeq2, R, KEGG/GO Enrichment, Survival Analysis, Statistical Testing
+                    </p>
+                </div>
+            </div>
+        </article>
 
         <article class="project">
             <h3>Automated Sensor Logger & Reporter</h3>
