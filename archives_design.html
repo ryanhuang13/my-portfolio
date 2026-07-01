@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Design Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body class="design-accent">
+
+    <header>
+        <h1 class="logo"><a href="archives.html">Archives</a></h1>
+        <nav aria-label="Navigation Bar">
+            <ul class="nav-list main-links">
+                <li><a href="archives_firmware.html">Software & Embedded</a></li>
+                <li><a href="archives_design.html" class="active">Engineering Design</a></li>
+                <li><a href="archives_biomedical.html">Biomedical Research</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="skills project-title">
+            <h2>Engineering Design</h2>
+        </section>
+
+        
+        <article class="project">
+            <h3>Automated Sensor Logger & Reporter</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/LinuxTempBash.png" alt="Linux Terminal Executing Automation Script" class="clickable lightboxable">
+                        <figcaption>Linux Terminal Executing Automation Script</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/LinuxTempEmail.png" alt="Email Report with Flags & Plot" class="clickable lightboxable">
+                        <figcaption>Email Report with Flags & Plot</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/LinuxTempPlot.png" alt="Plot of Temperature Reading Over Time" class="clickable lightboxable">
+                        <figcaption>Plot of Temperature Reading Over Time</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Manual sensor logging during QA is time-consuming and error-prone. 
+                        Since many embedded systems rely on Linux for automated testing, I designed a system to 
+                        streamline Arduino sensor data acquisition, anomaly detection, and reporting. This project 
+                        also gave me hands-on experience with shell scripting and building end-to-end automation 
+                        pipelines in a Linux environment.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I built a Bash-based automation pipeline that collected sensor data 
+                        from an Arduino, logged it to CSV with timestamps, generated plots, flagged anomalies, and 
+                        emailed reports containing logs and visualizations. This involved integrating Ubuntu on WSL, 
+                        serial data handling, and automated report generation using Linux utilities.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> The main challenge was that WSL does not allow direct access to 
+                        hardware COM ports. To solve this, I set up a TCP bridge (com2tcp) to forward Arduino serial 
+                        data into Linux, validated the stream using netcat, and resolved parsing/permission issues. 
+                        Through this project, I strengthened my skills in Linux automation, serial communication, 
+                        and end-to-end QA workflow design.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Linux OS, Bash, TCP/IP Protocol, Arduino, C/C++, Temperature Sensor
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>4-Bit Arithmetic Logic Unit (ALU)</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/ALUTestCase.png" alt="ALU Testbench Console Output" class="clickable lightboxable">
+                        <figcaption>ALU Testbench Console Output</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/ALULogicAnalyzer.png" alt="Full Logic Analyzer View (GTKWave)" class="clickable lightboxable">
+                        <figcaption>Full Logic Analyzer View (GTKWave)</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/ALUBinaryResult.png" alt="Expanded 4-Bit ALU Result Signals" class="clickable lightboxable">
+                        <figcaption>Expanded 4-Bit ALU Result Signals</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Understanding how basic arithmetic and logic operations are implemented 
+                        in hardware is fundamental to digital design. I designed a 4-bit ALU to explore how addition, 
+                        subtraction, AND, and OR operations can be performed with flags indicating carry, zero, negative, 
+                        and overflow conditions.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I created the ALU in Verilog and verified its functionality with a 
+                        self-checking testbench that automatically compared outputs to expected values. I used GTKWave 
+                        waveform analysis to debug signal propagation and flag behavior during edge cases, running 
+                        simulations through Icarus Verilog to gain hands-on experience with the HDL toolchain.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project strengthened my understanding of Verilog syntax, binary 
+                        addition and subtraction (including wrapping and carry/borrow logic), and the significance of 
+                        MSB/LSB in signed 4-bit arithmetic. It also provided practical experience in testbench creation, 
+                        waveform debugging, and hardware verification processes.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Verilog, GTKWave, Logic Analyzer
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="project">
+            <h3>Finger Slider Module Prototype</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/SliderModel.png" alt="SolidWorks Slider Model" class="clickable lightboxable">
+                        <figcaption>SolidWorks Slider Model</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/3DPrintSlider.png" alt="3D Printed Slider Prototype" class="clickable lightboxable">
+                        <figcaption>3D Printed Slider Prototype</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Hand rehabilitation exercises require devices that can adapt to different finger sizes 
+                        and provide measurable feedback. I wanted to design a modular system for finger flexion and extension 
+                        exercises that could improve exercise adherence and comfort.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I performed literature and patent reviews, then designed a finger slider module 
+                        in SolidWorks. The two-piece base and slider allows for easy assembly and size customization. I 3D printed 
+                        the prototype to test fit and function, planning future iterations to integrate sensors like ToF or force 
+                        sensors to measure position and pressure, with potential translation into a game interface for real-time feedback.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project enhanced my skills in human-centered design, mechanical prototyping, 
+                        and iterative testing. I learned to balance ergonomics, modularity, and future sensor integration for 
+                        interactive rehabilitation devices.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> SolidWorks, 3D Printing, Mechanical Prototyping, Human-Centered Design
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        
+
+        <article class="project">
+            <h3>Motion & Finite Element Analysis</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/FEABeam.png" alt="FEA for Cantilever Beam" class="clickable lightboxable">
+                        <figcaption>FEA for Cantilever Beam</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/YokeStress.png" alt="Stress Analysis on Yoke" class="clickable lightboxable">
+                        <figcaption>Stress Analysis on Yoke</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/CrankModel.png" alt="Inverted Crank Slider Model" class="clickable lightboxable">
+                        <figcaption>Inverted Crank Slider Model</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/CrankMotionPlot.png" alt="Slider Motion Plot" class="clickable lightboxable">
+                        <figcaption>Slider Motion Plot</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Designing mechanical components that can withstand applied loads requires 
+                        understanding motion and stress distribution. I wanted to learn how to simulate and optimize 
+                        mechanical designs beyond basic CAD modeling.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I used SolidWorks motion simulation to analyze a crank slider mechanism 
+                        and generate displacement plots. I also applied finite element analysis (FEA) with mesh convergence 
+                        to evaluate stress and strain on components. These techniques were applied in a design competition 
+                        to optimize a yoke design to withstand competitor-applied loads.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project enhanced my skills in motion simulation, FEA, and stress 
+                        optimization. I gained practical experience applying computational tools to improve mechanical 
+                        designs under real-world load conditions.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> SolidWorks, Motion Simulation, Finite Element Analysis (FEA), Stress Optimization
+                    </p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="modal">
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

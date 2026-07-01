@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomedical Research Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body class="biomedical-accent">
+
+    <header>
+        <h1 class="logo"><a href="archives.html">Archives</a></h1>
+        <nav aria-label="Navigation Bar">
+            <ul class="nav-list main-links">
+                <li><a href="archives_firmware.html">Software & Embedded</a></li>
+                <li><a href="archives_design.html">Engineering Design</a></li>
+                <li><a href="archives_biomedical.html" class="active">Biomedical Research</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="skills project-title">
+            <h2>Biomedical Research</h2>
+        </section>
+
+        <article class="project">
+            <h3>Breast Cancer Genomic Analysis Using Machine Learning</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/MLHeatmap.png" alt="Heatmap Comparing Differential Expression Genes" class="clickable lightboxable">
+                        <figcaption>Heatmap of Top Differentially Expressed Genes</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/MLPCA.png" alt="Principal Component Analysis of RNA Sequence Data" class="clickable lightboxable">
+                        <figcaption>PCA Showing Five Transcriptomic Clusters</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/MLDendrogram.png" alt="Hierarchical Clustering of Mutated Genes" class="clickable lightboxable">
+                        <figcaption>Hierarchical Clustering of Frequently Mutated Genes</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Breast cancer patients exhibit high biological variations, and these
+                        datasets contain thousands of genes which makes it difficult to identify meaningful biological drivers. 
+                        It is also valuable in cancer research to find patient subgroups that share similar molecular mechanisms, 
+                        tumour behaviour, and clinical outcomes. With the help of integrating machine learning techniques with classical 
+                        biostatistics, my goal was to explore underlying biological structure and patterns across thousands of patients 
+                        by analyzing gene expression, mutation profiles, and clinical conditions.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I designed a complete bioinformatics pipeline using clustering  
+                        and statistical modelling on TCGA breast cancer patient data. This involved examining mutation, 
+                        expression, and clinical metadata using an integrated framework of unsupervised learning, differential expression, 
+                        pathway enrichment, and statistical tests. The analysis revealed that immune-related pathways were the primary 
+                        drivers of transcriptomic differences, while neither mutation or expression clusters showed differences in patient outcomes.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project improved my skills in machine learning for biological data, 
+                        statistical hypothesis testing, and interpretation of high-dimensional genomic datasets. 
+                        I gained experience in dimensionality reduction techniques like PCA for visualizing complex data and exposure
+                        to clustering algorithms to identify patterns. The biological results reveal the complexity of cancer outcomes with 
+                        many factors beyond simple genomic profiles that shape disease behaviour.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> PCA, Clustering, DESeq2, R, KEGG/GO Enrichment, Survival Analysis, Statistical Testing
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        
+        <article class="project">
+            <h3>Computational Modeling of Biological Systems</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/GeneCircuitRepressilator.png" alt="Gene Circuit Repressilator" class="clickable lightboxable"> 
+                        <figcaption>Gene Circuit Repressilator</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/KineticModelDataFit.png" alt="Kinetic Model Data Fit" class="clickable lightboxable">
+                        <figcaption>Kinetic Model Data Fit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/PopModelStabilityAnalysis.png" alt="Population Model Stability Analysis" class="clickable lightboxable">
+                        <figcaption>Population Model Stability Analysis</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/EnzymeKin.png" alt="Enzyme Kinetics" class="clickable lightboxable">
+                        <figcaption>Enzyme Kinetics</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Understanding biological systems often requires predicting how molecules, 
+                        enzymes, or populations behave over time. I worked on computational models to study gene circuits, 
+                        population dynamics, and enzyme kinetics to gain insight into system behavior and regulation.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I used Python to simulate ordinary differential equations (ODEs) for 
+                        gene circuits and feedback loops, perform stability analysis on predator-prey population models, 
+                        fit experimental enzyme kinetics data using linear and non-linear regression, and solve boundary 
+                        value problems for mass transport and reaction-diffusion systems using the shooting method.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> Through these simulations, I learned how to analyze system dynamics, 
+                        predict equilibrium behavior, estimate kinetic parameters, and solve complex BVPs. This strengthened 
+                        my skills in computational modeling, data fitting, and quantitative analysis in biophysics contexts.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Python, ODE Simulation, Kinetic Modeling, Data Fitting, Stability Analysis, 
+                        Enzyme Kinetics, Shooting Method
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Muscle Movement Data & Signal Processing</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/TrackerPlot.png" alt="Marker-Based Motion Tracker Application Setup" class="clickable lightboxable">
+                        <figcaption>Marker-Based Motion Tracker Application Setup</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/EMG.png" alt="Surface EMG Setup" class="clickable lightboxable">
+                        <figcaption>Surface EMG Setup</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/EMGPlot.png" alt="EMG Force Data Plot" class="clickable lightboxable">
+                        <figcaption>EMG Force Data Plot</figcaption>
+                    </figure>
+                </div>
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Understanding muscle activation and balance control is important for 
+                        rehabilitation and performance assessment. I analyzed muscle movement, hand function, and 
+                        balance to study grip strength, stroke rehabilitation, and proprioception using real-world 
+                        biomechanical data.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I collected surface EMG, motion tracking, and force plate data, and 
+                        used Python and MATLAB to process and visualize it. This included filtering signals, normalizing 
+                        data, and performing statistical analysis to assess muscle activation timing, force generation, 
+                        and kinematic movement patterns.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> By comparing center of pressure (CoP) and center of mass (CoM) across 
+                        different balance exercises, I was able to quantify proprioception and balance control, gaining 
+                        hands-on experience in biomechanics data analysis, signal processing, and rehabilitation 
+                        assessment.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Python, MATLAB, EMG, Motion Tracking, Biomechanics, Force Plate, 
+                        Signal Processing, Data Analysis
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Spring-Actuated Knee Rehabilitation Device</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/SpringKneeDevice.png" alt="SolidWorks Knee Device Model" class="clickable lightboxable">
+                        <figcaption>SolidWorks Knee Device Model</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/MediaPipeModel.png" alt="Markerless Motion Tracking Sample" class="clickable lightboxable">
+                        <figcaption>Markerless Motion Tracking Sample</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/KneeROMPlot.png" alt="Knee ROM Plot" class="clickable lightboxable">
+                        <figcaption>Knee ROM Plot</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Impaired knee motion can limit mobility and slow rehabilitation. I wanted 
+                        to analyze knee movement in healthy and unhealthy individuals to design a solution that could 
+                        assist patients in regaining strength and proper motion.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I used MediaPipe to track knee motion and MATLAB to process data, 
+                        calculating range of motion (ROM) and angular velocity. Based on this analysis, I proposed a 
+                        spring-actuated device with an adjustable mechanism to provide additional force, helping the 
+                        knee move from flexion to extension while tailoring resistance to the patient’s strength.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project strengthened my skills in markerless motion tracking, data 
+                        analysis, biomechanics, and mechanical design. I gained experience in translating motion data 
+                        into actionable design concepts for rehabilitation devices.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> MediaPipe, MATLAB, SolidWorks, Markerless Motion Tracking, Biomechanics
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="project">
+            <h3>Cell Staining & Imaging</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/NucleiMicroscopy.png" alt="Nuclei Fluorescence Microscopy" class="clickable lightboxable">
+                        <figcaption>Nuclei Fluorescence Microscopy</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/GreyMicroscopy.png" alt="White Light Microscopy" class="clickable lightboxable">
+                        <figcaption>White Light Microscopy</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/GreenMicroscopy.png" alt="Green Light Microscopy" class="clickable lightboxable">
+                        <figcaption>Green Light Microscopy</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Visualizing intracellular structures is critical to understanding cell morphology 
+                        and organization. I wanted to observe nuclei and actin filaments in mammalian cells to learn fluorescence 
+                        imaging techniques and study cell structure.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I prepared cell cultures in an IBIDI imaging chamber, fixed them with paraformaldehyde, 
+                        permeabilized with Triton X-100, and blocked nonspecific binding using BSA. Cells were stained with phalloidin 
+                        Alexa-Fluor-488 and Hoechst dye to label F-actin and nuclei. Using fluorescence microscopy, I captured images 
+                        based on photon emission and wavelength patterns.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me hands-on skills in fluorescence staining, microscopy, and image 
+                        analysis. I gained experience in aseptic techniques, cell culture preparation, and using fluorescent markers 
+                        to study intracellular structures.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Fluorescence Microscopy, Image Processing, Cell Imaging, Fiji (ImageJ), Aseptic Technique, Micro Pipetting, Cell Culture
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>DNA Manipulation</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/GelElectrophoresis.png" alt="Gel Electrophoresis Setup" class="clickable lightboxable">
+                        <figcaption>Gel Electrophoresis Setup</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/DNALadder.png" alt="DNA Ladder" class="clickable lightboxable">
+                        <figcaption>DNA Ladder</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Separating DNA fragments is essential for cloning and genetic analysis. 
+                        I wanted to learn how plasmid DNA can be manipulated and visualized to prepare for downstream 
+                        applications like cloning or amplification.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I digested plasmid DNA with restriction enzymes in an optimized buffer, 
+                        producing DNA fragments of different sizes. Using agarose gel electrophoresis, I separated the 
+                        fragments based on size, with a conductive buffer enabling the electric field. This allowed 
+                        visualization and isolation of specific fragments for potential cloning into host cells like E. coli.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me hands-on skills in plasmid manipulation, enzymatic 
+                        digestion, gel setup, and DNA visualization. I gained experience with precise micro-pipetting, 
+                        understanding DNA charge properties, and the workflow for preparing DNA for cloning experiments.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Gel Electrophoresis, DNA Manipulation, Restriction Enzymes, Agarose Gel, DNA Ladder, Micro Pipetting
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Protein Engineering</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/3EQMStructure.png" alt="3EQM Structure" class="clickable lightboxable">
+                        <figcaption>Human Aromatase Structure</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/3EQMActiveSite.png" alt="3EQM Active Site" class="clickable lightboxable">
+                        <figcaption>Human Aromatase Active Site</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Low estrogen levels can lead to osteoporosis by weakening bone structure. 
+                        I wanted to study the aromatase enzyme, which converts testosterone and androstenedione to estradiol 
+                        and estrone, and explore how mutations could optimize its activity to improve estrogen production.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I analyzed the enzyme's active site, identifying three key residues in the 
+                        binding cavity. I designed mutations to adjust steric and chemical properties: choosing bulkier, 
+                        aromatic residues to reduce pocket size and maintain hydrophobic compatibility with the target 
+                        molecules. I then updated the FASTA sequence in Swiss-Model to generate mutant enzyme models and 
+                        used CB-Dock 2 to dock ligands and estimate Gibbs free energy for binding feasibility.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project strengthened my skills in molecular modeling, enzyme active 
+                        site analysis, and computational docking. I gained experience evaluating structural and chemical 
+                        compatibility for protein engineering and predicting the effects of mutations on enzyme activity.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Molecular Modeling, Active Site Analysis, PyMOL, Swiss-Model, CB-Dock 2
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Protein Release Kinetics</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/ProteinAssay.png" alt="Protein Assay" class="clickable lightboxable">
+                        <figcaption>Protein Assay</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/ProteinAssayDemo.png" alt="Protein Assay Demo" class="clickable lightboxable">
+                        <figcaption>Protein Assay Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Understanding how proteins are released from hydrogels is essential for 
+                        designing controlled drug delivery systems. I wanted to study the kinetics of protein diffusion 
+                        and release over time to evaluate material performance.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I immersed hydrogel spheres in buffer and collected samples at specific 
+                        time intervals. Protein concentration was measured using a BCA assay, with absorbance quantified 
+                        via spectrophotometry and compared against a standard curve to generate release profiles and 
+                        calculate diffusion rates.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project helped me develop hands-on skills in protein quantification, 
+                        spectrophotometry, and reaction kinetics. I learned to analyze release profiles to assess diffusion 
+                        behavior and gain insight into material performance for biomedical applications.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> BCA Protein Assay, Spectrophotometry, Chromatography, Reaction Kinetics
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="modal">
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

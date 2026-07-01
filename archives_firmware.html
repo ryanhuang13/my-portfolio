@@ -4,94 +4,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electronics</title>
+    <title>Software & Embedded Archives</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> 
 </head>
 
-<body class="electronics-accent">
+<body class="firmware-accent">
 
     <header>
-        <h1 class="logo"><a href="index.html">Home</a></h1>
-
+        <h1 class="logo"><a href="archives.html">Archives</a></h1>
         <nav aria-label="Navigation Bar">
             <ul class="nav-list main-links">
-                <li><a href="software.html">Software</a></li>
-                <li><a href="mechanical.html">Mechanical</a></li>
-                <li><a href="initiatives.html">Initiatives</a></li>
-                <li><a href="laboratory.html">Laboratory</a></li>
-                <li><a href="electronics.html" class="active">Electronics</a></li>
+                <li><a href="archives_firmware.html" class="active">Software & Embedded</a></li>
+                <li><a href="archives_design.html">Engineering Design</a></li>
+                <li><a href="archives_biomedical.html">Biomedical Research</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <section class="skills project-title">
-            <h2>Electronics</h2>
-            <div class="skills-container">
-                <div class="skill-box clickable" style="cursor: default">
-                    <h3>Microcontrollers</h3>
-                    <ul>
-                        <li>Arduino</li>
-                        <li>ESP32</li>
-                        <li>Raspberry Pi</li>
-                    </ul>
-                </div>
-
-                <div class="skill-box clickable" style="cursor: default">
-                    <h3>Communication & Interfaces</h3>
-                    <ul>
-                        <li>Serial Protocols</li>
-                        <li>Network Protocols</li>
-                        <li>REST API (Spotify Web API, ESPN API, OpenWeatherMap)</li>
-                    </ul>
-                </div>
-
-                <div class="skill-box clickable" style="cursor: default">
-                    <h3>Peripherals & Control</h3>
-                    <ul>
-                        <li>Sensor Integration (Piezo, ToF, Temperature, Tilt, Light)</li>
-                        <li>Motor Control (DC, Servo)</li>
-                    </ul>
-                </div>
-
-                <div class="skill-box clickable" style="cursor: default">
-                    <h3>Signal Processing</h3>
-                    <ul>
-                        <li>Pulse-Width Modulation</li>
-                        <li>Analog-to-Digital Conversion</li>
-                        <li>Digital Signal Processing (FFT, Filtering)</li>
-                    </ul>
-                </div>
-
-                <div class="skill-box clickable" style="cursor: default">
-                    <h3>Hardware Testing</h3>
-                    <ul>
-                        <li>Multimeter</li>
-                        <li>Oscilloscope</li>
-                        <li>Logic Analyzer</li>
-                    </ul>
-                </div>
-            </div>
+            <h2>Software & Embedded</h2>
         </section>
 
+
+        <article class="project">
+            <h3>Live ESPN Scoreboard</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/SportMain.png" alt="Live Scoreboard Circuit" class="clickable lightboxable">
+                        <figcaption>Live Scoreboard Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/SportDemo.png" alt="Sample Scoreboard Display" class="clickable lightboxable">
+                        <figcaption>Sample Scoreboard Display</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtu.be/Owoqje2sew4" target="_blank" class="clickable">
+                            <img src="images/SportThumbnail.png" alt="ESPN Scoreboard Video Demo">
+                        </a>
+                        <figcaption>ESPN Scoreboard Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Sports fans want to follow live games in real time, but scoreboards 
+                        depend on constantly changing data feeds that come in different formats. I built this project 
+                        to explore how live sports data could be pulled from APIs and displayed on a simple, interactive 
+                        Arduino-based system.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I built a system that parsed API responses, displayed team scores, 
+                        game clocks, and start times on an LCD, and used LED indicators to flash when a team scored. 
+                        To ensure reliability, I implemented serial print debugging for data validation and created 
+                        reusable C++ structs to encapsulate button debouncing and LED functionality, improving modularity 
+                        and efficiency.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> A key challenge was navigating through different JSON formats to extract 
+                        the needed information. By building structured parsing logic and validating outputs at each step, 
+                        I gained experience handling edge cases in real-time data processing. This project improved my 
+                        skills in API integration, embedded debugging, and modular C++ development for hardware systems.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Arduino, C/C++, ESPN APIs, JSON Parsing, LCD Display, LED Indicators
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Personal Project Website</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/WebsiteHTML.png" alt="HTML Profile Layout" class="clickable lightboxable">
+                        <figcaption>HTML Profile Layout</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/WebsiteSamplePage.png" alt="Electronics Page Layout with Green Accent" class="clickable lightboxable">
+                        <figcaption>Electronics Page Layout with Green Accent</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/WebsiteYouTube.png" alt="Clickable YouTube Link" class="clickable lightboxable">
+                        <figcaption>Clickable YouTube Link</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> This was my first website that I designed and built completely from 
+                        scratch without using external templates. I wanted to create a clean, organized way to present 
+                        my projects while learning the fundamentals of web development and UI/UX design.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I learned to use HTML to define the overall structure of the website, 
+                        CSS to add colour and improve visual presentation, and JavaScript to add interactivity through 
+                        button clicks and mouse movements. I also applied minimalistic design principles with darker 
+                        and neutral tones for readability, and gave each project page a unique colour theme to highlight 
+                        different skill areas.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me the importance of user interface and user 
+                        experience (UI/UX) design, as I wanted the most relevant information to stand out. I implemented 
+                        enlargeable images using a lightbox and modal concept in CSS and JavaScript, and embedded 
+                        clickable YouTube links for video demonstrations to make navigation more engaging.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> HTML, CSS, JavaScript, UI/UX Design
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Live Weather Monitor</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/WeatherMain.png" alt="Weather Monitor Circuit" class="clickable lightboxable">
+                        <figcaption>Weather Monitor Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/WeatherDemo.png" alt="Monitor Display with LED Weather Indicator" class="clickable lightboxable">
+                        <figcaption>Monitor Display with LED Weather Indicator</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtu.be/i2vsOGG-llE" target="_blank" class="clickable">
+                            <img src="images/WeatherThumbnail.png" alt="Weather Monitor Video Demo">
+                        </a>
+                        <figcaption>Weather Monitor Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Problem:</strong> Weather conditions affect daily life, and being able to access real-time 
+                        weather data makes it easier to plan ahead. I designed a system that monitors live weather and 
+                        temperature from Vancouver, Toronto, Ottawa, and Markham to explore how APIs can enhance 
+                        embedded systems with real-world data.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I used the OpenWeatherMap REST API to fetch live weather data and display 
+                        it on an LCD screen. The system included an RGB LED that changes colour based on weather conditions 
+                        and audio alerts that trigger when temperature changes. I also implemented two-way serial 
+                        communication between a Java program and the Arduino, where both sides could send and receive 
+                        commands on the same port.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This was my first time integrating internet access into a program by setting 
+                        up URL connections and parsing JSON data, extending beyond local processing. I also gained 
+                        experience with bidirectional serial communication, learning how to coordinate Arduino and computer 
+                        inputs to control the LED and buzzer in real time.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Arduino, Java, REST API, JSON Parsing, OpenWeatherMap, LCD Display, RGB LED, 
+                        Audio Alerts, Serial Communication
+                    </p>
+                </div>
+            </div>
+        </article>
         <article class="project">
             <h3>Spotify Controller</h3>
             <div class="project-content">
                 <div class="project-images">
                     <figure>
-                        <img src="electronics_images/SpotifyMain.png" alt="Spotify Controller Circuit" class="clickable lightboxable">
+                        <img src="images/SpotifyMain.png" alt="Spotify Controller Circuit" class="clickable lightboxable">
                         <figcaption>Spotify Controller Circuit</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="electronics_images/SpotifyLCD.png" alt="Song Display Sample" class="clickable lightboxable">
+                        <img src="images/SpotifyLCD.png" alt="Song Display Sample" class="clickable lightboxable">
                         <figcaption>Song Display Sample</figcaption>
                     </figure>
 
                     <figure>
                         <a href="https://youtu.be/2fFlLIFImmo" target="_blank" class="clickable">
-                            <img src="electronics_images/SpotifyThumbnail.png" alt="Spotify Controller Video Demo">
+                            <img src="images/SpotifyThumbnail.png" alt="Spotify Controller Video Demo">
                         </a>
                         <figcaption>Spotify Controller Video Demo</figcaption>
                     </figure>
@@ -124,69 +221,24 @@
             </div>
         </article>
 
-        <article class="project">
-            <h3>4-Bit Arithmetic Logic Unit (ALU)</h3>
-            <div class="project-content">
-                <div class="project-images">
-                    <figure>
-                        <img src="electronics_images/ALUTestCase.png" alt="ALU Testbench Console Output" class="clickable lightboxable">
-                        <figcaption>ALU Testbench Console Output</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="electronics_images/ALULogicAnalyzer.png" alt="Full Logic Analyzer View (GTKWave)" class="clickable lightboxable">
-                        <figcaption>Full Logic Analyzer View (GTKWave)</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="electronics_images/ALUBinaryResult.png" alt="Expanded 4-Bit ALU Result Signals" class="clickable lightboxable">
-                        <figcaption>Expanded 4-Bit ALU Result Signals</figcaption>
-                    </figure>
-                </div>
-
-                <div class="project-text">
-                    <p>
-                        <strong>Problem:</strong> Understanding how basic arithmetic and logic operations are implemented 
-                        in hardware is fundamental to digital design. I designed a 4-bit ALU to explore how addition, 
-                        subtraction, AND, and OR operations can be performed with flags indicating carry, zero, negative, 
-                        and overflow conditions.
-                    </p>
-                    <p>
-                        <strong>Solution:</strong> I created the ALU in Verilog and verified its functionality with a 
-                        self-checking testbench that automatically compared outputs to expected values. I used GTKWave 
-                        waveform analysis to debug signal propagation and flag behavior during edge cases, running 
-                        simulations through Icarus Verilog to gain hands-on experience with the HDL toolchain.
-                    </p>
-                    <p>
-                        <strong>Impact:</strong> This project strengthened my understanding of Verilog syntax, binary 
-                        addition and subtraction (including wrapping and carry/borrow logic), and the significance of 
-                        MSB/LSB in signed 4-bit arithmetic. It also provided practical experience in testbench creation, 
-                        waveform debugging, and hardware verification processes.
-                    </p>
-                    <p>
-                        <strong>Features:</strong> Verilog, GTKWave, Logic Analyzer
-                    </p>
-                </div>
-            </div>
-        </article>
 
         <article class="project">
             <h3>Webcam Controller</h3>
             <div class="project-content">
                 <div class="project-images">
                     <figure>
-                        <img src="electronics_images/WebcamMain.png" alt="Webcam Controller Circuit" class="clickable lightboxable">
+                        <img src="images/WebcamMain.png" alt="Webcam Controller Circuit" class="clickable lightboxable">
                         <figcaption>Webcam Controller Circuit</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="electronics_images/WebcamDemo.png" alt="Webcam Capture" class="clickable lightboxable">
+                        <img src="images/WebcamDemo.png" alt="Webcam Capture" class="clickable lightboxable">
                         <figcaption>Webcam Capture</figcaption>
                     </figure>
 
                     <figure>
                         <a href="https://youtube.com/shorts/g_GPFaC5PC0?feature=share" target="_blank" class="clickable">
-                            <img src="electronics_images/WebcamThumbnail.png" alt="Webcam Controller Video Demo">
+                            <img src="images/WebcamThumbnail.png" alt="Webcam Controller Video Demo">
                         </a>
                         <figcaption>Webcam Controller Video Demo</figcaption>
                     </figure>
@@ -221,18 +273,18 @@
             <div class="project-content">
                 <div class="project-images">
                     <figure>
-                        <img src="electronics_images/TempMain.png" alt="Temperature Regulation Controller Circuit" class="clickable lightboxable">
+                        <img src="images/TempMain.png" alt="Temperature Regulation Controller Circuit" class="clickable lightboxable">
                         <figcaption>Temperature Regulation Controller Circuit</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="electronics_images/TempLCD.png" alt="Temperature Display Example" class="clickable lightboxable">
+                        <img src="images/TempLCD.png" alt="Temperature Display Example" class="clickable lightboxable">
                         <figcaption>Temperature Display Example</figcaption>
                     </figure>
 
                     <figure>
                         <a href="https://youtu.be/E_3PFmFSJE8" target="_blank" class="clickable">
-                            <img src="electronics_images/TempThumbnail.png" alt="Temperature Regulation Controller Video Demo">
+                            <img src="images/TempThumbnail.png" alt="Temperature Regulation Controller Video Demo">
                         </a>
                         <figcaption>Temperature Regulation Controller Video Demo</figcaption>
                     </figure>
@@ -268,18 +320,18 @@
             <div class="project-content">
                 <div class="project-images">
                     <figure>
-                        <img src="electronics_images/BombMain.png" alt="Bomb Defusal Simulation Circuit" class="clickable lightboxable"> 
+                        <img src="images/BombMain.png" alt="Bomb Defusal Simulation Circuit" class="clickable lightboxable"> 
                         <figcaption>Bomb Defusal Simulation Circuit</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="electronics_images/BombLCD.png" alt="Bomb Timer and Guess" class="clickable lightboxable">
+                        <img src="images/BombLCD.png" alt="Bomb Timer and Guess" class="clickable lightboxable">
                         <figcaption>Bomb Timer and Guess</figcaption>
                     </figure>
 
                     <figure>
                         <a href="https://youtu.be/384b-FIRaYY" target="_blank" class="clickable">
-                            <img src="electronics_images/BombThumbnail.png" alt="Bomb Defusal Simulation Video Demo">
+                            <img src="images/BombThumbnail.png" alt="Bomb Defusal Simulation Video Demo">
                         </a>
                         <figcaption>Bomb Defusal Simulation Video Demo</figcaption>
                     </figure>
@@ -313,25 +365,25 @@
             <div class="project-content">
                 <div class="project-images">
                     <figure>
-                        <img src="electronics_images/PianoMain.png" alt="Dual-Mode Piano Trainer Circuit" class="clickable lightboxable">
+                        <img src="images/PianoMain.png" alt="Dual-Mode Piano Trainer Circuit" class="clickable lightboxable">
                         <figcaption>Dual-Mode Piano Trainer Circuit</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="electronics_images/PianoLCD.png" alt="Ode to Joy Sample Practice" class="clickable lightboxable">
+                        <img src="images/PianoLCD.png" alt="Ode to Joy Sample Practice" class="clickable lightboxable">
                         <figcaption>Ode to Joy Sample Practice</figcaption>
                     </figure>
 
                     <figure>
                         <a href="https://youtu.be/PQxOUZK4m9w" target="_blank" class="clickable">
-                            <img src="electronics_images/Piano1Thumbnail.png" alt="Piano Trainer Video Demo Part 1">
+                            <img src="images/Piano1Thumbnail.png" alt="Piano Trainer Video Demo Part 1">
                         </a>
                         <figcaption>Piano Trainer Video Demo Part 1</figcaption>
                     </figure>
 
                     <figure>
                         <a href="https://youtu.be/WMxRLGKNXao" target="_blank" class="clickable">
-                            <img src="electronics_images/Piano2Thumbnail.png" alt="Piano Trainer Video Demo Part 2">
+                            <img src="images/Piano2Thumbnail.png" alt="Piano Trainer Video Demo Part 2">
                         </a>
                         <figcaption>Piano Trainer Video Demo Part 2</figcaption>
                     </figure>
@@ -366,18 +418,18 @@
             <div class="project-content">
                 <div class="project-images">
                     <figure>
-                        <img src="electronics_images/MorseMain.png" alt="Morse Code Simulator Circuit" class="clickable lightboxable">
+                        <img src="images/MorseMain.png" alt="Morse Code Simulator Circuit" class="clickable lightboxable">
                         <figcaption>Morse Code Simulator Circuit</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="electronics_images/MorseLCD.png" alt="Sample Morse Code Translated Sequence" class="clickable lightboxable">
+                        <img src="images/MorseLCD.png" alt="Sample Morse Code Translated Sequence" class="clickable lightboxable">
                         <figcaption>Sample Morse Code Translated Sequence</figcaption>
                     </figure>
 
                     <figure>
                         <a href="https://youtube.com/shorts/DsR0f1nU5GE?feature=share" target="_blank" class="clickable">
-                            <img src="electronics_images/MorseThumbnail.png" alt="Morse Code Simulator Video Demo">
+                            <img src="images/MorseThumbnail.png" alt="Morse Code Simulator Video Demo">
                         </a>
                         <figcaption>Morse Code Simulator Video Demo</figcaption>
                     </figure>
@@ -411,18 +463,18 @@
             <div class="project-content">
                 <div class="project-images">
                     <figure>
-                        <img src="electronics_images/NightMain.png" alt="Nightlight Detector Circuit" class="clickable lightboxable">
+                        <img src="images/NightMain.png" alt="Nightlight Detector Circuit" class="clickable lightboxable">
                         <figcaption>Nightlight Detector Circuit</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="electronics_images/NightDemo.png" alt="Nightlight Turned On" class="clickable lightboxable">
+                        <img src="images/NightDemo.png" alt="Nightlight Turned On" class="clickable lightboxable">
                         <figcaption>Nightlight Turned On</figcaption>
                     </figure>
 
                     <figure>
                         <a href="https://youtube.com/shorts/WWJat9Wx1hA?feature=share" target="_blank" class="clickable">
-                            <img src="electronics_images/NightThumbnail.png" alt="Nightlight Detector Video Demo">
+                            <img src="images/NightThumbnail.png" alt="Nightlight Detector Video Demo">
                         </a>
                         <figcaption>Nightlight Detector Video Demo</figcaption>
                     </figure>
@@ -456,18 +508,18 @@
             <div class="project-content">
                 <div class="project-images">
                     <figure>
-                        <img src="electronics_images/WhackMain.png" alt="Whack-A-Mole Game Circuit" class="clickable lightboxable">
+                        <img src="images/WhackMain.png" alt="Whack-A-Mole Game Circuit" class="clickable lightboxable">
                         <figcaption>Whack-A-Mole Game Circuit</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="electronics_images/WhackScore.png" alt="Whack-A-Mole Score Sample" class="clickable lightboxable">
+                        <img src="images/WhackScore.png" alt="Whack-A-Mole Score Sample" class="clickable lightboxable">
                         <figcaption>Whack-A-Mole Score Sample</figcaption>
                     </figure>
 
                     <figure>
                         <a href="https://youtube.com/shorts/zJOG7BWpooA?feature=share" target="_blank" class="clickable">
-                            <img src="electronics_images/WhackThumbnail.png" alt="Whack-A-Mole Game Video Demo">
+                            <img src="images/WhackThumbnail.png" alt="Whack-A-Mole Game Video Demo">
                         </a>
                         <figcaption>Whack-A-Mole Game Video Demo</figcaption>
                     </figure>
@@ -496,6 +548,7 @@
                 </div>
             </div>
         </article>
+
     </main>
 
     <div id="lightbox" class="lightbox">

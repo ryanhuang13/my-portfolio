@@ -5,11 +5,12 @@
     --accent: #b0b0b1;
 }
 
-.software-accent { --accent: #b94d4d; }
-.mechanical-accent { --accent: #4d6b8a; }
-.initiatives-accent { --accent: #b86e32; }
-.laboratory-accent { --accent: #7a5fa3; }
-.electronics-accent { --accent: #4d8a64; }
+.firmware-accent { --accent: #b94d4d; }
+.archives-accent { --accent: #b86e32; }
+.featured-accent { --accent: #b8af32; }
+.experience-accent { --accent: #4d8a64; }
+.design-accent { --accent: #4d6b8a; }
+.biomedical-accent { --accent: #7a5fa3; }
 
 body {
     background-color: var(--background);
@@ -46,7 +47,8 @@ header .logo a,
 header .logo a:hover,
 .nav-list li a:hover,
 .about-me-contact p:hover .icon,
-.about-me-contact p:hover a {
+.about-me-contact p:hover a,
+.featured-card:hover {
     color: #b0b0b1;
     transform: scale(0.95);
 } 
@@ -74,7 +76,7 @@ header {
 }
 
 header .logo a {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -84,8 +86,8 @@ header .logo a {
 }
 
 .nav-list li a {
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 800;
+    font-size: 2rem;
 }
 
 .nav-list li a.active {
@@ -113,10 +115,10 @@ header .logo a {
 }
 
 .about-me-header img {
-    border-radius: 50%;
+    border-radius: 8px;
     margin-bottom: 1rem;
-    width: 168px;
-    height: 210px;
+    width: 180px;
+    height: 230px;
 }
 
 .about-me-info h3,
@@ -142,8 +144,8 @@ header .logo a {
 .about-me-contact p {
     display: flex;
     align-items: center;
-    gap: 8x;
-    margin: 8px 0;
+    gap: 2px;
+    margin: 0;
 }
 
 .about-me-contact .icon {
@@ -167,6 +169,55 @@ header .logo a {
 .about-me-text h2 {font-size: 3rem;}
 
 .about-me-text p {font-size: 1.5rem;}
+
+.about-me-contact img[alt="Spotify Logo"] {
+    width: 80px;
+    height: auto;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.about-me-contact img[alt="Spotify Logo"] + a {
+    position: relative;
+    left: -10px;  /* move right */
+    top: 10px;  /* optional vertical tweak */
+}
+
+.featured-links {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    margin: 3rem auto;
+    margin-top: 0rem;
+    flex-wrap: wrap;
+}
+
+.featured-card {
+    flex: 1;
+    min-width: 320px;
+    max-width: 420px;
+
+    background-color: #3a3a3a;
+    border-radius: 20px;
+
+    padding: 0rem 2rem;
+
+    color: var(--text);
+    text-decoration: none;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0 0; /*Top, Right, Bottom, Left*/
+}
+
+.featured-card p {
+    font-size: 1.1rem;
+    margin: 0.1rem 0 0.5rem 0; /*Top, Right, Bottom, Left*/
+}
 
 /*project skills box*/
 .skills h2 {
