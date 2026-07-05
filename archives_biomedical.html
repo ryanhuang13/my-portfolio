@@ -15,7 +15,7 @@
         <h1 class="logo"><a href="archives.html">Archives</a></h1>
         <nav aria-label="Navigation Bar">
             <ul class="nav-list main-links">
-                <li><a href="archives_firmware.html">Software & Embedded</a></li>
+                <li><a href="archives_embedded.html">Embedded Systems</a></li>
                 <li><a href="archives_design.html">Engineering Design</a></li>
                 <li><a href="archives_biomedical.html" class="active">Biomedical Research</a></li>
             </ul>
@@ -49,6 +49,9 @@
 
                 <div class="project-text">
                     <p>
+                        <strong>Date:</strong> December 2025
+                    </p>
+                    <p>
                         <strong>Problem:</strong> Breast cancer patients exhibit high biological variations, and these
                         datasets contain thousands of genes which makes it difficult to identify meaningful biological drivers. 
                         It is also valuable in cancer research to find patient subgroups that share similar molecular mechanisms, 
@@ -77,7 +80,49 @@
             </div>
         </article>
 
-        
+        <article class="project">
+            <h3>Protein Engineering</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/3EQMStructure.png" alt="3EQM Structure" class="clickable lightboxable">
+                        <figcaption>Human Aromatase Structure</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/3EQMActiveSite.png" alt="3EQM Active Site" class="clickable lightboxable">
+                        <figcaption>Human Aromatase Active Site</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Date:</strong> March 2025
+                    </p>
+                    <p>
+                        <strong>Problem:</strong> Low estrogen levels can lead to osteoporosis by weakening bone structure. 
+                        I wanted to study the aromatase enzyme, which converts testosterone and androstenedione to estradiol 
+                        and estrone, and explore how mutations could optimize its activity to improve estrogen production.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I analyzed the enzyme's active site, identifying three key residues in the 
+                        binding cavity. I designed mutations to adjust steric and chemical properties: choosing bulkier, 
+                        aromatic residues to reduce pocket size and maintain hydrophobic compatibility with the target 
+                        molecules. I then updated the FASTA sequence in Swiss-Model to generate mutant enzyme models and 
+                        used CB-Dock 2 to dock ligands and estimate Gibbs free energy for binding feasibility.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project strengthened my skills in molecular modeling, enzyme active 
+                        site analysis, and computational docking. I gained experience evaluating structural and chemical 
+                        compatibility for protein engineering and predicting the effects of mutations on enzyme activity.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Molecular Modeling, Active Site Analysis, PyMOL, Swiss-Model, CB-Dock 2
+                    </p>
+                </div>
+            </div>
+        </article>
+
         <article class="project">
             <h3>Computational Modeling of Biological Systems</h3>
             <div class="project-content">
@@ -105,6 +150,9 @@
 
                 <div class="project-text">
                     <p>
+                        <strong>Date:</strong> January 2025
+                    </p>
+                    <p>
                         <strong>Problem:</strong> Understanding biological systems often requires predicting how molecules, 
                         enzymes, or populations behave over time. I worked on computational models to study gene circuits, 
                         population dynamics, and enzyme kinetics to gain insight into system behavior and regulation.
@@ -123,6 +171,48 @@
                     <p>
                         <strong>Features:</strong> Python, ODE Simulation, Kinetic Modeling, Data Fitting, Stability Analysis, 
                         Enzyme Kinetics, Shooting Method
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>DNA Manipulation</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/GelElectrophoresis.png" alt="Gel Electrophoresis Setup" class="clickable lightboxable">
+                        <figcaption>Gel Electrophoresis Setup</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/DNALadder.png" alt="DNA Ladder" class="clickable lightboxable">
+                        <figcaption>DNA Ladder</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Date:</strong> November 2024
+                    </p>
+                    <p>
+                        <strong>Problem:</strong> Separating DNA fragments is essential for cloning and genetic analysis. 
+                        I wanted to learn how plasmid DNA can be manipulated and visualized to prepare for downstream 
+                        applications like cloning or amplification.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I digested plasmid DNA with restriction enzymes in an optimized buffer, 
+                        producing DNA fragments of different sizes. Using agarose gel electrophoresis, I separated the 
+                        fragments based on size, with a conductive buffer enabling the electric field. This allowed 
+                        visualization and isolation of specific fragments for potential cloning into host cells like E. coli.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me hands-on skills in plasmid manipulation, enzymatic 
+                        digestion, gel setup, and DNA visualization. I gained experience with precise micro-pipetting, 
+                        understanding DNA charge properties, and the workflow for preparing DNA for cloning experiments.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Gel Electrophoresis, DNA Manipulation, Restriction Enzymes, Agarose Gel, DNA Ladder, Micro Pipetting
                     </p>
                 </div>
             </div>
@@ -148,6 +238,9 @@
                     </figure>
                 </div>
                 <div class="project-text">
+                    <p>
+                        <strong>Date:</strong> October 2024
+                    </p>
                     <p>
                         <strong>Problem:</strong> Understanding muscle activation and balance control is important for 
                         rehabilitation and performance assessment. I analyzed muscle movement, hand function, and 
@@ -175,50 +268,6 @@
         </article>
 
         <article class="project">
-            <h3>Spring-Actuated Knee Rehabilitation Device</h3>
-            <div class="project-content">
-                <div class="project-images">
-                    <figure>
-                        <img src="images/SpringKneeDevice.png" alt="SolidWorks Knee Device Model" class="clickable lightboxable">
-                        <figcaption>SolidWorks Knee Device Model</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/MediaPipeModel.png" alt="Markerless Motion Tracking Sample" class="clickable lightboxable">
-                        <figcaption>Markerless Motion Tracking Sample</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/KneeROMPlot.png" alt="Knee ROM Plot" class="clickable lightboxable">
-                        <figcaption>Knee ROM Plot</figcaption>
-                    </figure>
-                </div>
-
-                <div class="project-text">
-                    <p>
-                        <strong>Problem:</strong> Impaired knee motion can limit mobility and slow rehabilitation. I wanted 
-                        to analyze knee movement in healthy and unhealthy individuals to design a solution that could 
-                        assist patients in regaining strength and proper motion.
-                    </p>
-                    <p>
-                        <strong>Solution:</strong> I used MediaPipe to track knee motion and MATLAB to process data, 
-                        calculating range of motion (ROM) and angular velocity. Based on this analysis, I proposed a 
-                        spring-actuated device with an adjustable mechanism to provide additional force, helping the 
-                        knee move from flexion to extension while tailoring resistance to the patient’s strength.
-                    </p>
-                    <p>
-                        <strong>Impact:</strong> This project strengthened my skills in markerless motion tracking, data 
-                        analysis, biomechanics, and mechanical design. I gained experience in translating motion data 
-                        into actionable design concepts for rehabilitation devices.
-                    </p>
-                    <p>
-                        <strong>Features:</strong> MediaPipe, MATLAB, SolidWorks, Markerless Motion Tracking, Biomechanics
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="project">
             <h3>Cell Staining & Imaging</h3>
             <div class="project-content">
                 <div class="project-images">
@@ -239,6 +288,9 @@
                 </div>
 
                 <div class="project-text">
+                    <p>
+                        <strong>Date:</strong> October 2024
+                    </p>
                     <p>
                         <strong>Problem:</strong> Visualizing intracellular structures is critical to understanding cell morphology 
                         and organization. I wanted to observe nuclei and actin filaments in mammalian cells to learn fluorescence 
@@ -263,85 +315,6 @@
         </article>
 
         <article class="project">
-            <h3>DNA Manipulation</h3>
-            <div class="project-content">
-                <div class="project-images">
-                    <figure>
-                        <img src="images/GelElectrophoresis.png" alt="Gel Electrophoresis Setup" class="clickable lightboxable">
-                        <figcaption>Gel Electrophoresis Setup</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/DNALadder.png" alt="DNA Ladder" class="clickable lightboxable">
-                        <figcaption>DNA Ladder</figcaption>
-                    </figure>
-                </div>
-
-                <div class="project-text">
-                    <p>
-                        <strong>Problem:</strong> Separating DNA fragments is essential for cloning and genetic analysis. 
-                        I wanted to learn how plasmid DNA can be manipulated and visualized to prepare for downstream 
-                        applications like cloning or amplification.
-                    </p>
-                    <p>
-                        <strong>Solution:</strong> I digested plasmid DNA with restriction enzymes in an optimized buffer, 
-                        producing DNA fragments of different sizes. Using agarose gel electrophoresis, I separated the 
-                        fragments based on size, with a conductive buffer enabling the electric field. This allowed 
-                        visualization and isolation of specific fragments for potential cloning into host cells like E. coli.
-                    </p>
-                    <p>
-                        <strong>Impact:</strong> This project taught me hands-on skills in plasmid manipulation, enzymatic 
-                        digestion, gel setup, and DNA visualization. I gained experience with precise micro-pipetting, 
-                        understanding DNA charge properties, and the workflow for preparing DNA for cloning experiments.
-                    </p>
-                    <p>
-                        <strong>Features:</strong> Gel Electrophoresis, DNA Manipulation, Restriction Enzymes, Agarose Gel, DNA Ladder, Micro Pipetting
-                    </p>
-                </div>
-            </div>
-        </article>
-
-        <article class="project">
-            <h3>Protein Engineering</h3>
-            <div class="project-content">
-                <div class="project-images">
-                    <figure>
-                        <img src="images/3EQMStructure.png" alt="3EQM Structure" class="clickable lightboxable">
-                        <figcaption>Human Aromatase Structure</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/3EQMActiveSite.png" alt="3EQM Active Site" class="clickable lightboxable">
-                        <figcaption>Human Aromatase Active Site</figcaption>
-                    </figure>
-                </div>
-
-                <div class="project-text">
-                    <p>
-                        <strong>Problem:</strong> Low estrogen levels can lead to osteoporosis by weakening bone structure. 
-                        I wanted to study the aromatase enzyme, which converts testosterone and androstenedione to estradiol 
-                        and estrone, and explore how mutations could optimize its activity to improve estrogen production.
-                    </p>
-                    <p>
-                        <strong>Solution:</strong> I analyzed the enzyme's active site, identifying three key residues in the 
-                        binding cavity. I designed mutations to adjust steric and chemical properties: choosing bulkier, 
-                        aromatic residues to reduce pocket size and maintain hydrophobic compatibility with the target 
-                        molecules. I then updated the FASTA sequence in Swiss-Model to generate mutant enzyme models and 
-                        used CB-Dock 2 to dock ligands and estimate Gibbs free energy for binding feasibility.
-                    </p>
-                    <p>
-                        <strong>Impact:</strong> This project strengthened my skills in molecular modeling, enzyme active 
-                        site analysis, and computational docking. I gained experience evaluating structural and chemical 
-                        compatibility for protein engineering and predicting the effects of mutations on enzyme activity.
-                    </p>
-                    <p>
-                        <strong>Features:</strong> Molecular Modeling, Active Site Analysis, PyMOL, Swiss-Model, CB-Dock 2
-                    </p>
-                </div>
-            </div>
-        </article>
-
-        <article class="project">
             <h3>Protein Release Kinetics</h3>
             <div class="project-content">
                 <div class="project-images">
@@ -357,6 +330,9 @@
                 </div>
 
                 <div class="project-text">
+                    <p>
+                        <strong>Date:</strong> September 2024
+                    </p>
                     <p>
                         <strong>Problem:</strong> Understanding how proteins are released from hydrogels is essential for 
                         designing controlled drug delivery systems. I wanted to study the kinetics of protein diffusion 

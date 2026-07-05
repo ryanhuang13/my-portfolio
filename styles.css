@@ -5,7 +5,7 @@
     --accent: #b0b0b1;
 }
 
-.firmware-accent { --accent: #b94d4d; }
+.embedded-accent { --accent: #b94d4d; }
 .archives-accent { --accent: #b86e32; }
 .featured-accent { --accent: #b8af32; }
 .experience-accent { --accent: #4d8a64; }
@@ -47,8 +47,7 @@ header .logo a,
 header .logo a:hover,
 .nav-list li a:hover,
 .about-me-contact p:hover .icon,
-.about-me-contact p:hover a,
-.featured-card:hover {
+.about-me-contact p:hover a {
     color: #b0b0b1;
     transform: scale(0.95);
 } 

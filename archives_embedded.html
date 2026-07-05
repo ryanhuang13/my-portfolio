@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software & Embedded Archives</title>
+    <title>Embedded Systems Archives</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> 
 </head>
 
-<body class="firmware-accent">
+<body class="embedded-accent">
 
     <header>
         <h1 class="logo"><a href="archives.html">Archives</a></h1>
         <nav aria-label="Navigation Bar">
             <ul class="nav-list main-links">
-                <li><a href="archives_firmware.html" class="active">Software & Embedded</a></li>
+                <li><a href="archives_embedded.html" class="active">Embedded Systems</a></li>
                 <li><a href="archives_design.html">Engineering Design</a></li>
                 <li><a href="archives_biomedical.html">Biomedical Research</a></li>
             </ul>
@@ -24,12 +24,62 @@
     
     <main>
         <section class="skills project-title">
-            <h2>Software & Embedded</h2>
+            <h2>Embedded Systems</h2>
         </section>
+        <article class="project">
+            <h3>Spotify Controller</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/SpotifyMain.png" alt="Spotify Controller Circuit" class="clickable lightboxable">
+                        <figcaption>Spotify Controller Circuit</figcaption>
+                    </figure>
 
+                    <figure>
+                        <img src="images/SpotifyLCD.png" alt="Song Display Sample" class="clickable lightboxable">
+                        <figcaption>Song Display Sample</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtu.be/2fFlLIFImmo" target="_blank" class="clickable">
+                            <img src="images/SpotifyThumbnail.png" alt="Spotify Controller Video Demo">
+                        </a>
+                        <figcaption>Spotify Controller Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Date:</strong> August 2025
+                    </p>
+                    <p>
+                        <strong>Problem:</strong> Controlling music playback while working or doing other tasks can be 
+                        inefficient. I designed a project to create a responsive, interactive controller that allows 
+                        play/pause, track skipping, and volume adjustment for Spotify using hardware integration.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I integrated an Arduino with an LCD display to show the current song, 
+                        artist, and remaining time, with auto-scrolling for longer titles. I used Python with the 
+                        pyserial and spotipy packages, handling OAuth token-based authentication to interact with 
+                        Spotify playback. Serial communication between Python and Arduino allowed sending and receiving 
+                        Unicode strings encoded as bytes for smooth real-time updates.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project strengthened my skills in API integration, continuous 
+                        serial data management, OAuth authentication, and hardware/software interfacing. It also 
+                        improved my ability to parse JSON data, handle redirect URIs, and build interactive systems 
+                        that combine software and physical components.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Python, Spotify Web API, Token-Based Authentication (OAuth), Playback 
+                        Control, Serial Communication, Arduino, C/C++, LCD Display
+                    </p>
+                </div>
+            </div>
+        </article>
 
         <article class="project">
-            <h3>Live ESPN Scoreboard</h3>
+            <h3>Live Scoreboard</h3>
             <div class="project-content">
                 <div class="project-images">
                     <figure>
@@ -44,13 +94,16 @@
 
                     <figure>
                         <a href="https://youtu.be/Owoqje2sew4" target="_blank" class="clickable">
-                            <img src="images/SportThumbnail.png" alt="ESPN Scoreboard Video Demo">
+                            <img src="images/SportThumbnail.png" alt="Scoreboard Video Demo">
                         </a>
-                        <figcaption>ESPN Scoreboard Video Demo</figcaption>
+                        <figcaption>Scoreboard Video Demo</figcaption>
                     </figure>
                 </div>
 
                 <div class="project-text">
+                    <p>
+                        <strong>Date:</strong> August 2025
+                    </p>
                     <p>
                         <strong>Problem:</strong> Sports fans want to follow live games in real time, but scoreboards 
                         depend on constantly changing data feeds that come in different formats. I built this project 
@@ -78,46 +131,49 @@
         </article>
 
         <article class="project">
-            <h3>Personal Project Website</h3>
+            <h3>Webcam Controller</h3>
             <div class="project-content">
                 <div class="project-images">
                     <figure>
-                        <img src="images/WebsiteHTML.png" alt="HTML Profile Layout" class="clickable lightboxable">
-                        <figcaption>HTML Profile Layout</figcaption>
+                        <img src="images/WebcamMain.png" alt="Webcam Controller Circuit" class="clickable lightboxable">
+                        <figcaption>Webcam Controller Circuit</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="images/WebsiteSamplePage.png" alt="Electronics Page Layout with Green Accent" class="clickable lightboxable">
-                        <figcaption>Electronics Page Layout with Green Accent</figcaption>
+                        <img src="images/WebcamDemo.png" alt="Webcam Capture" class="clickable lightboxable">
+                        <figcaption>Webcam Capture</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="images/WebsiteYouTube.png" alt="Clickable YouTube Link" class="clickable lightboxable">
-                        <figcaption>Clickable YouTube Link</figcaption>
+                        <a href="https://youtube.com/shorts/g_GPFaC5PC0?feature=share" target="_blank" class="clickable">
+                            <img src="images/WebcamThumbnail.png" alt="Webcam Controller Video Demo">
+                        </a>
+                        <figcaption>Webcam Controller Video Demo</figcaption>
                     </figure>
                 </div>
 
                 <div class="project-text">
                     <p>
-                        <strong>Problem:</strong> This was my first website that I designed and built completely from 
-                        scratch without using external templates. I wanted to create a clean, organized way to present 
-                        my projects while learning the fundamentals of web development and UI/UX design.
+                        <strong>Date:</strong> August 2025
                     </p>
                     <p>
-                        <strong>Solution:</strong> I learned to use HTML to define the overall structure of the website, 
-                        CSS to add colour and improve visual presentation, and JavaScript to add interactivity through 
-                        button clicks and mouse movements. I also applied minimalistic design principles with darker 
-                        and neutral tones for readability, and gave each project page a unique colour theme to highlight 
-                        different skill areas.
+                        <strong>Problem:</strong> Controlling a webcam manually can be inconvenient, and I wanted to explore 
+                        how hardware could directly interface with a computer to manipulate camera functions in real time. 
+                        This project gave me hands-on experience with serial communication beyond typical Arduino-only setups.
                     </p>
                     <p>
-                        <strong>Impact:</strong> This project taught me the importance of user interface and user 
-                        experience (UI/UX) design, as I wanted the most relevant information to stand out. I implemented 
-                        enlargeable images using a lightbox and modal concept in CSS and JavaScript, and embedded 
-                        clickable YouTube links for video demonstrations to make navigation more engaging.
+                        <strong>Solution:</strong> I built a system where an Arduino controller adjusts zoom and orientation, 
+                        and captures images directly to the computer. Communication between the Arduino and computer 
+                        used UART serial transmission at a fixed baud rate, enabling real-time control without a separate 
+                        clock signal for synchronization.
                     </p>
                     <p>
-                        <strong>Features:</strong> HTML, CSS, JavaScript, UI/UX Design
+                        <strong>Impact:</strong> This project improved my understanding of UART and serial data communication, 
+                        as well as integrating hardware inputs to control software functionality. I gained experience 
+                        manipulating a computer interface from an embedded device and managing real-time data transfer.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Serial Communication (UART), Tilt Sensor, Java (Processing), Arduino, C/C++
                     </p>
                 </div>
             </div>
@@ -147,6 +203,9 @@
 
                 <div class="project-text">
                     <p>
+                        <strong>Date:</strong> August 2025
+                    </p>
+                    <p>
                         <strong>Problem:</strong> Weather conditions affect daily life, and being able to access real-time 
                         weather data makes it easier to plan ahead. I designed a system that monitors live weather and 
                         temperature from Vancouver, Toronto, Ottawa, and Markham to explore how APIs can enhance 
@@ -168,101 +227,6 @@
                     <p>
                         <strong>Features:</strong> Arduino, Java, REST API, JSON Parsing, OpenWeatherMap, LCD Display, RGB LED, 
                         Audio Alerts, Serial Communication
-                    </p>
-                </div>
-            </div>
-        </article>
-        <article class="project">
-            <h3>Spotify Controller</h3>
-            <div class="project-content">
-                <div class="project-images">
-                    <figure>
-                        <img src="images/SpotifyMain.png" alt="Spotify Controller Circuit" class="clickable lightboxable">
-                        <figcaption>Spotify Controller Circuit</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/SpotifyLCD.png" alt="Song Display Sample" class="clickable lightboxable">
-                        <figcaption>Song Display Sample</figcaption>
-                    </figure>
-
-                    <figure>
-                        <a href="https://youtu.be/2fFlLIFImmo" target="_blank" class="clickable">
-                            <img src="images/SpotifyThumbnail.png" alt="Spotify Controller Video Demo">
-                        </a>
-                        <figcaption>Spotify Controller Video Demo</figcaption>
-                    </figure>
-                </div>
-
-                <div class="project-text">
-                    <p>
-                        <strong>Problem:</strong> Controlling music playback while working or doing other tasks can be 
-                        inefficient. I designed a project to create a responsive, interactive controller that allows 
-                        play/pause, track skipping, and volume adjustment for Spotify using hardware integration.
-                    </p>
-                    <p>
-                        <strong>Solution:</strong> I integrated an Arduino with an LCD display to show the current song, 
-                        artist, and remaining time, with auto-scrolling for longer titles. I used Python with the 
-                        pyserial and spotipy packages, handling OAuth token-based authentication to interact with 
-                        Spotify playback. Serial communication between Python and Arduino allowed sending and receiving 
-                        Unicode strings encoded as bytes for smooth real-time updates.
-                    </p>
-                    <p>
-                        <strong>Impact:</strong> This project strengthened my skills in API integration, continuous 
-                        serial data management, OAuth authentication, and hardware/software interfacing. It also 
-                        improved my ability to parse JSON data, handle redirect URIs, and build interactive systems 
-                        that combine software and physical components.
-                    </p>
-                    <p>
-                        <strong>Features:</strong> Python, Spotify Web API, Token-Based Authentication (OAuth), Playback 
-                        Control, Serial Communication, Arduino, C/C++, LCD Display
-                    </p>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="project">
-            <h3>Webcam Controller</h3>
-            <div class="project-content">
-                <div class="project-images">
-                    <figure>
-                        <img src="images/WebcamMain.png" alt="Webcam Controller Circuit" class="clickable lightboxable">
-                        <figcaption>Webcam Controller Circuit</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/WebcamDemo.png" alt="Webcam Capture" class="clickable lightboxable">
-                        <figcaption>Webcam Capture</figcaption>
-                    </figure>
-
-                    <figure>
-                        <a href="https://youtube.com/shorts/g_GPFaC5PC0?feature=share" target="_blank" class="clickable">
-                            <img src="images/WebcamThumbnail.png" alt="Webcam Controller Video Demo">
-                        </a>
-                        <figcaption>Webcam Controller Video Demo</figcaption>
-                    </figure>
-                </div>
-
-                <div class="project-text">
-                    <p>
-                        <strong>Problem:</strong> Controlling a webcam manually can be inconvenient, and I wanted to explore 
-                        how hardware could directly interface with a computer to manipulate camera functions in real time. 
-                        This project gave me hands-on experience with serial communication beyond typical Arduino-only setups.
-                    </p>
-                    <p>
-                        <strong>Solution:</strong> I built a system where an Arduino controller adjusts zoom and orientation, 
-                        and captures images directly to the computer. Communication between the Arduino and computer 
-                        used UART serial transmission at a fixed baud rate, enabling real-time control without a separate 
-                        clock signal for synchronization.
-                    </p>
-                    <p>
-                        <strong>Impact:</strong> This project improved my understanding of UART and serial data communication, 
-                        as well as integrating hardware inputs to control software functionality. I gained experience 
-                        manipulating a computer interface from an embedded device and managing real-time data transfer.
-                    </p>
-                    <p>
-                        <strong>Features:</strong> Serial Communication (UART), Tilt Sensor, Java (Processing), Arduino, C/C++
                     </p>
                 </div>
             </div>
@@ -292,6 +256,9 @@
 
                 <div class="project-text">
                     <p>
+                        <strong>Date:</strong> July 2025
+                    </p>
+                    <p>
                         <strong>Problem:</strong> Monitoring and controlling temperature is important for many devices, 
                         and I wanted to simulate a system where a fan adjusts automatically based on temperature. 
                         This project allowed me to explore DC motor control and embedded feedback systems.
@@ -310,6 +277,54 @@
                     </p>
                     <p>
                         <strong>Features:</strong> Temperature Sensor, DC Motor, H-Bridge, EEPROM, Arduino, C/C++, LCD Display
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3>Nightlight Detector</h3>
+            <div class="project-content">
+                <div class="project-images">
+                    <figure>
+                        <img src="images/NightMain.png" alt="Nightlight Detector Circuit" class="clickable lightboxable">
+                        <figcaption>Nightlight Detector Circuit</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/NightDemo.png" alt="Nightlight Turned On" class="clickable lightboxable">
+                        <figcaption>Nightlight Turned On</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://youtube.com/shorts/WWJat9Wx1hA?feature=share" target="_blank" class="clickable">
+                            <img src="images/NightThumbnail.png" alt="Nightlight Detector Video Demo">
+                        </a>
+                        <figcaption>Nightlight Detector Video Demo</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        <strong>Date:</strong> July 2025
+                    </p>
+                    <p>
+                        <strong>Problem:</strong> I wanted to explore how sensors can interact with lighting to create a responsive 
+                        nightlight. The goal was to adjust light intensity automatically based on ambient conditions, 
+                        providing a simple and interactive learning experience.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> I built a system using a phototransistor to sense ambient light and an RGB 
+                        LED to display white light at varying intensity. I mapped and constrained analog readings to the 
+                        0–255 range to control color mixing accurately and calibrated the sensor for correct readings.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> This project taught me how to integrate analog sensors with RGB LEDs, 
+                        perform calibration, and manipulate color intensity in response to real-world inputs. I gained 
+                        practical experience in sensor data mapping and responsive embedded lighting systems.
+                    </p>
+                    <p>
+                        <strong>Features:</strong> Phototransistor, RGB LED, Arduino, C/C++
                     </p>
                 </div>
             </div>
@@ -338,6 +353,9 @@
                 </div>
 
                 <div class="project-text">
+                    <p>
+                        <strong>Date:</strong> June 2025
+                    </p>
                     <p>
                         <strong>Problem:</strong> I wanted to design an interactive game that combined input/output systems 
                         with a time-pressure challenge. The goal was to simulate disarming a bomb, giving players a 
@@ -391,6 +409,9 @@
 
                 <div class="project-text">
                     <p>
+                        <strong>Date:</strong> June 2025
+                    </p>
+                    <p>
                         <strong>Problem:</strong> Learning to play an instrument can be challenging without real-time guidance. 
                         I wanted to create an interactive system that combined UI/UX elements with audio feedback to make 
                         practicing piano more engaging and effective.
@@ -437,6 +458,9 @@
 
                 <div class="project-text">
                     <p>
+                        <strong>Date:</strong> June 2025
+                    </p>
+                    <p>
                         <strong>Problem:</strong> Learning Morse code can be challenging, and I wanted to create a simple embedded 
                         device that translated button-pressed Morse code into text while providing visual and audio feedback.
                     </p>
@@ -453,51 +477,6 @@
                     </p>
                     <p>
                         <strong>Features:</strong> Serial Communication (I<sup>2</sup>C), Parallel Communication, Piezo Buzzer, Arduino, C/C++, LCD Display
-                    </p>
-                </div>
-            </div>
-        </article>
-
-        <article class="project">
-            <h3>Nightlight Detector</h3>
-            <div class="project-content">
-                <div class="project-images">
-                    <figure>
-                        <img src="images/NightMain.png" alt="Nightlight Detector Circuit" class="clickable lightboxable">
-                        <figcaption>Nightlight Detector Circuit</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/NightDemo.png" alt="Nightlight Turned On" class="clickable lightboxable">
-                        <figcaption>Nightlight Turned On</figcaption>
-                    </figure>
-
-                    <figure>
-                        <a href="https://youtube.com/shorts/WWJat9Wx1hA?feature=share" target="_blank" class="clickable">
-                            <img src="images/NightThumbnail.png" alt="Nightlight Detector Video Demo">
-                        </a>
-                        <figcaption>Nightlight Detector Video Demo</figcaption>
-                    </figure>
-                </div>
-
-                <div class="project-text">
-                    <p>
-                        <strong>Problem:</strong> I wanted to explore how sensors can interact with lighting to create a responsive 
-                        nightlight. The goal was to adjust light intensity automatically based on ambient conditions, 
-                        providing a simple and interactive learning experience.
-                    </p>
-                    <p>
-                        <strong>Solution:</strong> I built a system using a phototransistor to sense ambient light and an RGB 
-                        LED to display white light at varying intensity. I mapped and constrained analog readings to the 
-                        0–255 range to control color mixing accurately and calibrated the sensor for correct readings.
-                    </p>
-                    <p>
-                        <strong>Impact:</strong> This project taught me how to integrate analog sensors with RGB LEDs, 
-                        perform calibration, and manipulate color intensity in response to real-world inputs. I gained 
-                        practical experience in sensor data mapping and responsive embedded lighting systems.
-                    </p>
-                    <p>
-                        <strong>Features:</strong> Phototransistor, RGB LED, Arduino, C/C++
                     </p>
                 </div>
             </div>
@@ -526,6 +505,9 @@
                 </div>
 
                 <div class="project-text">
+                    <p>
+                        <strong>Date:</strong> December 2023
+                    </p>
                     <p>
                         <strong>Problem:</strong> I wanted to bring a simulated class assignment into a physical system 
                         to explore real-time embedded gameplay. The goal was to create an interactive game where 
