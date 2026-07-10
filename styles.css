@@ -30,7 +30,7 @@ body {
 }
 
 .clickable:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     box-shadow: 0 4px 15px var(--accent); 
 }
 
@@ -216,6 +216,67 @@ header .logo a {
 .featured-card p {
     font-size: 1.1rem;
     margin: 0.1rem 0 0.5rem 0; /*Top, Right, Bottom, Left*/
+}
+
+/* work experience box */
+.experience-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 340px;
+    max-width: 500px;
+    flex: 1;
+    background-color: #3a3a3a;
+    border-radius: 20px;
+    padding: 2rem;
+    color: var(--text);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-logo {
+    width: auto;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.experience-card h3 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.experience-card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.3rem 0 0 0;
+    color: #c8c8c8;
+}
+
+.experience-duration {
+    font-size: 0.95rem;
+    color: #9c9c9c;
+    margin: 0.4rem 0 1.2rem 0;
+}
+
+.experience-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.experience-link {
+    margin-top: auto;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /*project skills box*/
