@@ -33,7 +33,7 @@
                     <p><strong>Key Skills:</strong></p>
                     <p>- <strong>Firmware:</strong> C/C++, Embedded Debugging (JTAG, GDB), FreeRTOS, Memory Management, Concurrent Programming</p>
                     <p>- <strong>Embedded Systems:</strong> Linux, SPI, UART, Python Test Automation, Shell Scripting, littleFS</p>
-                    <p>- <strong>Networking:</strong> TCP/IP, Wireshark, lwIP, OCPP, LTE Networking, Modbus RTU/TCP</p>
+                    <p>- <strong>Networking:</strong> TCP/IP, Wireshark, OCPP, LTE Networking, Modbus RTU/TCP, lwIP</p>
                     <p>- <strong>Hardware:</strong> PCB Design (Altium), Hardware Validation, Compliance Testing</p>
                 </div>
 
@@ -45,6 +45,8 @@
                         and improving task synchronization for external commands. I also developed a JTAG-based firmware flashing utility over SPI and gained
                         experience with embedded architecture, including FreeRTOS task handling, the lwIP networking stack, and littleFS for storing firmware images.
                         I also investigated embedded firmware bugs using JTAG and GDB to identify root causes, implement fixes, and submit production-ready pull requests.
+                        One example of my work involved debugging and resolving a FreeRTOS synchronization issue involving lwIP socket sharing, mutexes, and semaphores that caused a Telnet hang session.
+                        I also added a link-down detection to the Telnet service, allowing proper cleanup of client sessions on physical Ethernet disconnections.
                     </p>
                     <p>
                         - <strong>Networking & Test Automation:</strong>

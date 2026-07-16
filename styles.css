@@ -1,16 +1,25 @@
-/*main set up for colors and background*/
+/*====================================================
+    VARIABLES
+====================================================*/
+
+/* Main colors */
 :root {
     --background: #2c2c2c;
     --text: #d3d3d3;
     --accent: #b0b0b1;
 }
 
+/* Page accent colors */
 .embedded-accent { --accent: #b94d4d; }
 .archives-accent { --accent: #b86e32; }
 .featured-accent { --accent: #b8af32; }
 .experience-accent { --accent: #4d8a64; }
 .design-accent { --accent: #4d6b8a; }
 .biomedical-accent { --accent: #7a5fa3; }
+
+/*====================================================
+    GLOBAL
+====================================================*/
 
 body {
     background-color: var(--background);
@@ -20,21 +29,48 @@ body {
     padding: 0;
 }
 
-/*clickable items*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*====================================================
+    SHARED CLICKABLE ELEMENTS
+====================================================*/
+
 .clickable {
     cursor: pointer;
     display: inline-block;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    color: var(--text); 
-    text-decoration: none; 
+    color: var(--text);
+    text-decoration: none;
 }
 
 .clickable:hover {
     transform: scale(1.03);
-    box-shadow: 0 4px 15px var(--accent); 
+    box-shadow: 0 4px 15px var(--accent);
 }
 
-/*clickable words*/
+/*====================================================
+    HEADER / NAVIGATION
+====================================================*/
+
+header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3a3a3a;
+    border-bottom: 2px solid var(--accent);
+    z-index: 1000;
+}
+
 header .logo a,
 .nav-list li a,
 .about-me-contact a {
@@ -44,44 +80,22 @@ header .logo a,
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
+header .logo a {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 header .logo a:hover,
 .nav-list li a:hover,
 .about-me-contact p:hover .icon,
 .about-me-contact p:hover a {
     color: #b0b0b1;
     transform: scale(0.95);
-} 
-
-/*set up for navigation bar on top*/
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-header {
-    height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #3a3a3a;
-    border-bottom: 2px solid var(--accent);
-    z-index: 1000;
-}
-
-header .logo a {
-    font-size: 3rem;
-    font-weight: bold;
 }
 
 .nav-list {
     display: flex;
-    gap: 5.0rem; 
+    gap: 5rem;
 }
 
 .nav-list li a {
@@ -94,16 +108,20 @@ header .logo a {
     padding-bottom: 0.2rem;
 }
 
-/*main home page set up*/
+/*====================================================
+    HOME PAGE - ABOUT ME
+====================================================*/
+
 .about-me {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding: 8rem 2rem 2rem 2rem;
     gap: 5rem;
     flex-wrap: wrap;
 }
 
-/*contact information box*/
+/* Contact Card */
+
 .about-me-header {
     flex: 1 1 250px;
     background-color: #3a3a3a;
@@ -123,11 +141,11 @@ header .logo a {
 .about-me-info h3,
 .about-me-info p {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 .about-me-info h3 {
-    text-align: center; 
+    text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -136,9 +154,11 @@ header .logo a {
     margin: 0.3rem 0;
     margin-bottom: 2rem;
     font-size: 1.5rem;
-    font-style: normal; 
+    font-style: normal;
     text-align: center;
 }
+
+/* Contact Information */
 
 .about-me-contact p {
     display: flex;
@@ -155,20 +175,6 @@ header .logo a {
     vertical-align: middle;
 }
 
-/*about me box*/
-.about-me-text {
-    flex: 2 1 400px; 
-    background-color: #3a3a3a;
-    padding: 1.5rem;
-    border-radius: 20px;
-    max-width: 1000px;
-    text-align: left; 
-}
-
-.about-me-text h2 {font-size: 3rem;}
-
-.about-me-text p {font-size: 1.5rem;}
-
 .about-me-contact img[alt="Spotify Logo"] {
     width: 80px;
     height: auto;
@@ -178,9 +184,32 @@ header .logo a {
 
 .about-me-contact img[alt="Spotify Logo"] + a {
     position: relative;
-    left: -10px;  /* move right */
-    top: 10px;  /* optional vertical tweak */
+    left: -10px;
+    top: 10px;
 }
+
+/* About Me Text */
+
+.about-me-text {
+    flex: 2 1 400px;
+    background-color: #3a3a3a;
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.about-me-text h2 {
+    font-size: 3rem;
+}
+
+.about-me-text p {
+    font-size: 1.5rem;
+}
+
+/*====================================================
+    FEATURED LINKS
+====================================================*/
 
 .featured-links {
     display: flex;
@@ -196,21 +225,17 @@ header .logo a {
     flex: 1;
     min-width: 320px;
     max-width: 420px;
-
     background-color: #3a3a3a;
     border-radius: 20px;
-
     padding: 0rem 2rem;
-
     color: var(--text);
     text-decoration: none;
-
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .featured-card h3 {
     font-size: 1.2rem;
-    margin: 0.5rem 0 0 0; /*Top, Right, Bottom, Left*/
+    margin: 0.5rem 0 0 0;
 }
 
 .featured-card p {
@@ -218,7 +243,10 @@ header .logo a {
     margin: 0.1rem 0 0.5rem 0; /*Top, Right, Bottom, Left*/
 }
 
-/* work experience box */
+/*====================================================
+    EXPERIENCE
+====================================================*/
+
 .experience-container {
     display: flex;
     justify-content: center;
@@ -279,7 +307,10 @@ header .logo a {
     font-weight: 600;
 }
 
-/*project skills box*/
+/*====================================================
+    SKILLS
+====================================================*/
+
 .skills h2 {
     text-align: center;
     margin-bottom: 2rem;
@@ -288,11 +319,11 @@ header .logo a {
 
 .skills-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     max-width: 1500px;
-    margin: 0 auto; 
-    gap: 1rem;      
-    flex-wrap: wrap; 
+    margin: 0 auto;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .skill-box {
@@ -304,10 +335,13 @@ header .logo a {
     font-size: 1.2rem;
     text-align: left;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    display: block; 
+    display: block;
 }
 
-/*project boxes*/
+/*====================================================
+    PROJECTS
+====================================================*/
+
 .project {
     margin: 2rem auto;
     padding: 1.5rem;
@@ -345,7 +379,7 @@ header .logo a {
 }
 
 .project-images figure {
-    flex: 1 1 350px; 
+    flex: 1 1 350px;
     text-align: center;
     margin: 0;
 }
@@ -370,35 +404,38 @@ header .logo a {
     line-height: 1.6;
 }
 
-/*lightbox modal for photos*/
+/*====================================================
+    LIGHTBOX
+====================================================*/
+
 .lightbox {
-  display: none; 
-  position: fixed; 
-  z-index: 9999; 
-  padding-top: 60px; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  background-color: rgba(0,0,0,0.8);
-  text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
 }
 
 .lightbox-content {
-  max-width: 80%;
-  max-height: 80%;
-  margin: auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
 .lightbox .close {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
