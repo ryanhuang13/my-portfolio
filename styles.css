@@ -175,19 +175,6 @@ header .logo a:hover,
     vertical-align: middle;
 }
 
-.about-me-contact img[alt="Spotify Logo"] {
-    width: 80px;
-    height: auto;
-    display: inline-block;
-    transition: transform 0.2s ease;
-}
-
-.about-me-contact img[alt="Spotify Logo"] + a {
-    position: relative;
-    left: -10px;
-    top: 10px;
-}
-
 /* About Me Text */
 
 .about-me-text {
